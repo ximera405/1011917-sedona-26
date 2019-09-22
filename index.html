@@ -7,26 +7,27 @@
 </head>
 
 <body>
-  <header class="header">
-    <nav class="nav">
-      <a class="nav-link" href="#">
-        <img class="nav_icon" src="https://via.placeholder.com/150x100" alt="Логотип сайта" height="" width="">
-      </a>
-      <ul class="nav_list">
-        <li class="nav_item">
-          <a href="information.html" class="">информация</a>
-        </li>
-        <li class="nav_item">
-          <a href="photovideo.html">фото и&nbsp;видео</a></li>
-        <li class="nav_item">
-          <a href="map.html">карта штата</a>
-        </li>
-        <li class="nav_item">
-          <a href="hotels.html">гостиницы</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <header class="header">
+        <nav class="nav">
+          <a class="nav link" href="#">
+            <img src="https://via.placeholder.com/150x100" alt="Логотип сайта" height="" width="" class="nav_icon">
+          </a>
+          <ul class="nav list">
+            <li class="nav item">
+              <a class="nav_inform" href="information.html" >информация</a>
+            </li>
+            <li class="nav item">
+              <a class="nav_photo_video" href="photovideo.html">фото и&nbsp;видео</a>
+            </li>
+            <li class="nav item">
+              <a class="nav_map" href="map.html" >карта штата</a>
+            </li>
+            <li class="nav item">
+              <a class="nav_hotels" href="hotels.html">гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
 
   <main class="main">
     <section class="main_greeting">
@@ -57,15 +58,15 @@
     </section>
 
     <section class="feutures">
-    <div>
+    <div class="feautures_house">
       <h3 class="feutures_title">Жилье</h3>
       <p class="feutures_text">Рекомендуем пожить в&nbsp;настоящеммотеле, всё как в&nbsp;кино!</p>
     </div>
-    <div>
+    <div class="feautures_food">
       <h3 class="feutures_title">Еда</h3>
       <p class="feutures_text">Всегда заказывайте фирменный бургер,вы не&nbsp;разочаруетесь!</p>
     </div>
-    <div>
+    <div class="feautures_souvenirs">
       <h3 class="feutures_title">Сувениры</h3>
       <p class="feutures_text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местногопроизводства!</p>
     </div>
@@ -107,15 +108,18 @@
       <h2 class="search_ask">Заинтересовались?</h2>
       <p class="search_date">Укажите предполагаемые даты поездки,и мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
       <!--Форма-->
-      <form name="">
-        <legend>Поиск гостиницы в&nbsp;Седоне</legend>
-        <fieldset>
-          <label>Дата заезда: </label>
-          <input type="date">
-          <label>Дата выезда: </label>
-          <input type="date">
-        </fieldset>
-      </form>
+      <form>
+          <p class="find_hotel">Поиск гостиницы в седоне</p>
+          <label for="date_check_in">Дата заезда:</label>
+          <input type="date" name="date_in" id="date_check_in">
+          <label for="date_check_out">Дата выезда:</label>
+          <input type="date" name="date_out" id="date_check_out">
+          <label for="adault">Взрослые:</label>
+          <input type="number" min="1" max="10" value="1" name="number_adault" id="adault">
+          <label for="children">Дети:</label>
+          <input type="number" min="0" max="10" value="0" name="nember_children" id="children">
+          <a href="#">Найти</a>
+        </form>
       <!--Карта-->
     </section>
   </main>
@@ -124,14 +128,14 @@
     <p class="footer_tag">#visitsedona</p>
     <div class="socials">
       <ul class="socials_list">
-        <li class="social__item--tw">
-          <a href="#" class="social__link--tw"></a>
+        <li class="social__item social__item--tw">
+          <a href="#" class="social__link social__link--tw"></a>
         </li>
-        <li class="social__item--vk">
-          <a href="#" class="social__link--vk"></a>
+        <li class="social__item social__item--vk">
+          <a href="#" class="social__link social__link--vk"></a>
         </li>
-        <li class="social__item--yt">
-          <a href="#" class="social__link--yt"></a>
+        <li class="social__item social__item--yt">
+          <a href="#" class="social__link social__link--yt"></a>
         </li>
       </ul>
       <p class="footer pic">website&nbsp;by<img class="footer_img" src="https://via.placeholder.com/150x100"></p>
