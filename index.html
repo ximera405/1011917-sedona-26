@@ -2,6 +2,7 @@
 <html lang="ru">
 
 <head>
+  <link href="style.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Седона</title>
 </head>
@@ -9,20 +10,20 @@
 <body>
     <header class="header">
         <nav class="nav">
-          <a class="nav link" href="#">
-            <img src="https://via.placeholder.com/150x100" alt="Логотип сайта" height="" width="" class="nav_icon">
+          <a class="nav-link" href="#">
+            <img src="https://via.placeholder.com/150x100" alt="Логотип сайта" height="" width="" class="nav-icon">
           </a>
-          <ul class="nav list">
-            <li class="nav item">
+          <ul class="nav-list">
+            <li class="nav-item">
               <a class="nav_inform" href="information.html" >информация</a>
             </li>
-            <li class="nav item">
+            <li class="nav-item">
               <a class="nav_photo_video" href="photovideo.html">фото и&nbsp;видео</a>
             </li>
-            <li class="nav item">
+            <li class="nav-item">
               <a class="nav_map" href="map.html" >карта штата</a>
             </li>
-            <li class="nav item">
+            <li class="nav-item">
               <a class="nav_hotels" href="hotels.html">гостиницы</a>
             </li>
           </ul>
@@ -48,13 +49,13 @@
     </section>
 
     <section class="main_town">
-      <h3 class="main_town content">настоящий городок</h3>
-      <p class="main_town number">&mdash;&#8470;&nbsp;1&mdash;</p>
-      <p class="main_town text">седона-не аттракцион для туристов,там течёт своя жизнь!</p>
+      <h3 class="main_town-content">настоящий городок</h3>
+      <p class="main_town-number">&mdash;&#8470;&nbsp;1&mdash;</p>
+      <p class="main_town-text">седона-не аттракцион для туристов,там течёт своя жизнь!</p>
     </section>
 
-    <section class="main_town">
-      <img class="main_town img" src="https://via.placeholder.com/150x100" >
+    <section class="main_town-pic">
+      <img class="main_town-img" src="https://via.placeholder.com/150x100" >
     </section>
 
     <section class="feutures">
@@ -72,34 +73,34 @@
     </div>
     </section>
 
-    <section class="evil_bridge">
-      <img class="evil_bridge img" src="https://via.placeholder.com/150x100" >
+    <section class="evil_bridg-pic">
+      <img class="evil_bridge-img" src="https://via.placeholder.com/150x100" >
     </section>
 
     <section class="evil_bridge">
-      <h3 class="evil_bridge title">
+      <h3 class="evil_bridge-title">
         Там есть мость дьявола
       </h3>
-      <p class="evil_bridge number">&mdash;&#8470;&nbsp;2&mdash;</p>
-      <p class="evil_bridge text">Да, по&nbsp;нему можно пройти! Если конечновы осмелитесь</p>
+      <p class="evil_bridge-number">&mdash;&#8470;&nbsp;2&mdash;</p>
+      <p class="evil_bridge-text">Да, по&nbsp;нему можно пройти! Если конечновы осмелитесь</p>
     </section>
 
     <section class="advantages">
-      <ul class="advantages list">
-        <li class="advantages item">
-          <h3 class="advantages item_title">Небольшая площадь</h3>
-          <p class="advantages item_number">&mdash;&#8470;&nbsp;3&mdash;</p>
-          <p class="advantages item_text">Все достопримечательности находятся очень близко</p>
+      <ul class="advantages-list">
+        <li class="advantages-item">
+          <h3 class="advantages-item_title">Небольшая площадь</h3>
+          <p class="advantages-item_number">&mdash;&#8470;&nbsp;3&mdash;</p>
+          <p class="advantages-item_text">Все достопримечательности находятся очень близко</p>
         </li>
-        <li class="advantages item">
-          <h3 class="advantages item_title">Красивая дорога</h3>
-          <p class="advantages item_number">&mdash;&#8470;&nbsp;4&mdash;</p>
-          <p class="advantages item_text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсемне скучно</p>
+        <li class="advantages-item">
+          <h3 class="advantages-item_title">Красивая дорога</h3>
+          <p class="advantages-item_number">&mdash;&#8470;&nbsp;4&mdash;</p>
+          <p class="advantages-item_text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсемне скучно</p>
         </li>
-        <li class="advantages item">
-          <h3 class="advantages item_title">Мало туристов</h3>
-          <p class="advantages item_number">&mdash;&#8470;&nbsp;5&mdash;</p>
-          <p class="advantages item_text">Большинство едет в&nbsp;гранд каньони толпится там</p>
+        <li class="advantages-item">
+          <h3 class="advantages-item_title">Мало туристов</h3>
+          <p class="advantages-item_number">&mdash;&#8470;&nbsp;5&mdash;</p>
+          <p class="advantages-item_text">Большинство едет в&nbsp;гранд каньони толпится там</p>
         </li>
       </ul>
     </section>
@@ -117,7 +118,7 @@
           <label for="adault">Взрослые:</label>
           <input type="number" min="1" max="10" value="1" name="number_adault" id="adault">
           <label for="children">Дети:</label>
-          <input type="number" min="0" max="10" value="0" name="nember_children" id="children">
+          <input type="number" min="0" max="10" value="0" name="number_children" id="children">
           <a href="#">Найти</a>
         </form>
       <!--Карта-->
@@ -125,20 +126,22 @@
   </main>
 
   <footer class="footer">
-    <p class="footer_tag">#visitsedona</p>
-    <div class="socials">
-      <ul class="socials_list">
-        <li class="social__item social__item--tw">
-          <a href="#" class="social__link social__link--tw"></a>
-        </li>
-        <li class="social__item social__item--vk">
-          <a href="#" class="social__link social__link--vk"></a>
-        </li>
-        <li class="social__item social__item--yt">
-          <a href="#" class="social__link social__link--yt"></a>
-        </li>
-      </ul>
-      <p class="footer pic">website&nbsp;by<img class="footer_img" src="https://via.placeholder.com/150x100"></p>
-  </footer>
+      <p class="footer_tag">#visitsedona</p>
+      <div class="socials">
+        <ul class="socials_list">
+          <li class="social__item social__item--tw">
+            <a class="social__link social__link--tw" href="#"></a>
+          </li>
+          <li class="social__item social__item--vk">
+            <a class="social__link social__link--vk" href="#"></a>
+          </li>
+          <li class="social__item social__item--yt">
+            <a class="social__link social__link--yt" href="#"></a>
+          </li>
+        </ul>
+        <p class="footer-pic">website&nbsp;by
+          <img class="footer_img" src="https://via.placeholder.com/150x100">
+        </p>
+    </footer>
 </body>
 </html>
