@@ -12,11 +12,11 @@
 <header class="header">
   <nav class="nav">
     <a class="nav-link" href="#">
-      <img src="https://via.placeholder.com/150x100" alt="Логотип сайта" height="" width="" class="nav-icon">
+      <img class="nav-icon" src="img/logo-sedona.svg" alt="Логотип сайта" height="70px" width="140px">
     </a>
     <ul class="nav-list">
       <li class="nav-item">
-        <a class="nav_inform" href="information.html" >информация</a>
+        <a class="nav_inform" href="information.html">информация</a>
       </li>
       <li class="nav-item">
         <a class="nav_photo_video" href="photovideo.html">фото и&nbsp;видео</a>
@@ -34,10 +34,8 @@
 <main class="main">
 
 <section class="main_greeting">
-  <h1 class="greeting_title">
-    Welcome -to the gardeous-
-  </h1>
-  <h2 class="greeting_caption">Sedona</h2>
+  <img class="greeting_title" src="img/intro-welcome.svg" width="300px" height="200px">
+  <h1 class="greeting_caption">Sedona</h1>
   <p class="greeting_quote">&laquo;Because the GrandCanyon sucks!&raquo;</p>
 </section>
 
@@ -119,15 +117,21 @@
   <p class="search_date">Укажите предполагаемые даты поездки,и мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне</p>
   <form>
     <p class="find_hotel">Поиск гостиницы в седоне</p>
-    <label for="date_check_in">Дата заезда:</label>
+    <label for="date_check_in">
+      Дата заезда:
+      <img class="calendar_check-in" src="img/calendar.svg" width="20px" height="20px">
+    </label>
     <input type="date" name="date_in" id="date_check_in">
-    <label for="date_check_out">Дата выезда:</label>
+    <label for="date_check_out">
+      Дата выезда:
+      <img class="calendar_check-out" src="img/calendar.svg" width="20px" height="20px">
+    </label>
     <input type="date" name="date_out" id="date_check_out">
     <label for="adault">Взрослые:</label>
     <input type="number" min="1" max="10" value="1" name="number_adault" id="adault">
     <label for="children">Дети:</label>
     <input type="number" min="0" max="10" value="0" name="number_children" id="children">
-    <a href="#">Найти</a>
+    <a class="input_search" href="#">Найти</a>
   </form>
   <!--Карта-->
 </section>
@@ -149,7 +153,7 @@
       </li>
     </ul>
     <p class="footer-pic">website&nbsp;by
-      <img class="footer_img" src="https://via.placeholder.com/150x100">
+      <img class="footer_img" src="img/logo-htmlacademy.svg" width="115px" height="40px">
     </p>
 </footer>
 
