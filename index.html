@@ -36,7 +36,7 @@
   <main class="main">
 
     <section class="main_greeting">
-      <img class="greeting_title" src="img/intro-welcome.svg" alt="" width="300" height="200" >
+      <img class="greeting_title" src="img/intro-welcome.svg" alt="" width="300" height="200">
     </section>
 
     <section class="description">
@@ -119,23 +119,33 @@
       <h2 class="search_ask">Заинтересовались?</h2>
       <p class="search_date">Укажите предполагаемые даты поездки,и мы&nbsp;покажем вам лучшие предложения гостиниц
         в&nbsp;седоне</p>
-      <form>
+      <form class="find_hotel-form" method="get" action="https://echo.htmlacademy.ru">
         <p class="find_hotel">Поиск гостиницы в седоне</p>
-        <label for="date_check_in">
-          Дата заезда:
-          <img class="calendar_check-in" src="img/calendar.svg" alt="" width="20" height="20">
-        </label>
-        <input type="date" name="date_in" id="date_check_in">
-        <label for="date_check_out">
-          Дата выезда:
-          <img class="calendar_check-out" src="img/calendar.svg" alt="" width="20" height="20">
-        </label>
-        <input type="date" name="date_out" id="date_check_out">
-        <label for="adault">Взрослые:</label>
-        <input type="number" min="1" max="10" value="1" name="number_adault" id="adault">
-        <label for="children">Дети:</label>
-        <input type="number" min="0" max="10" value="0" name="number_children" id="children">
-        <a class="input_search" href="#">Найти</a>
+        <p class="date_check_in-text">
+          <label for="date_check_in">
+            Дата заезда:
+            <img class="calendar_check-in" src="img/calendar.svg" alt="" width="20" height="20">
+          </label>
+          <input type="date" name="date_in" id="date_check_in">
+        </p>
+        <p class="date_check_out-text">
+          <label for="date_check_out">
+            Дата выезда:
+            <img class="calendar_check-out" src="img/calendar.svg" alt="" width="20" height="20">
+          </label>
+          <input type="date" name="date_out" id="date_check_out">
+        </p>
+        <p class="adault-text">
+          <label for="adault">
+            Взрослые:
+          </label>
+          <input type="number" min="1" max="10" value="1" name="number_adault" id="adault">
+        </p>
+        <p class="children-text">
+          <label for="children">Дети:</label>
+          <input type="number" min="0" max="10" value="0" name="number_children" id="children">
+        </p>
+        <button class="input_search" type="submit">Найти</button>
       </form>
     </section>
 
