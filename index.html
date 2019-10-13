@@ -2,7 +2,9 @@
 <html lang="ru">
 
 <head>
-  <link href="style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans&display=swap" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Седона</title>
 </head>
@@ -36,12 +38,12 @@
   <main class="main">
 
     <section class="main_greeting">
-      <img class="greeting_title" src="img/intro-welcome.svg" alt="" width="300" height="200">
+      <img class="greeting_title" src="img/intro-welcome.svg" alt="" width="459" height="353">
     </section>
 
     <section class="description">
       <h2 class="description_slogan">
-        седона&nbsp;&mdash; небольшой городок в&nbsp;оризоне,
+        седона&nbsp;&mdash; небольшой городок в&nbsp;аризоне,
         заслуживающий большего!
       </h2>
       <p class="description_text">
@@ -120,31 +122,23 @@
       <p class="search_date">Укажите предполагаемые даты поездки,и мы&nbsp;покажем вам лучшие предложения гостиниц
         в&nbsp;седоне</p>
       <form class="find_hotel-form" method="get" action="https://echo.htmlacademy.ru">
-        <p class="find_hotel">Поиск гостиницы в седоне</p>
-        <p class="date_check_in-text">
-          <label for="date_check_in">
-            Дата заезда:
-            <img class="calendar_check-in" src="img/calendar.svg" alt="" width="20" height="20">
-          </label>
-          <input type="date" name="date_in" id="date_check_in" placeholder="24 апреля 2017">
-        </p>
-        <p class="date_check_out-text">
-          <label for="date_check_out">
-            Дата выезда:
-            <img class="calendar_check-out" src="img/calendar.svg" alt="" width="20" height="20">
-          </label>
-          <input type="date" name="date_out" id="date_check_out" placeholder="4 июля 2017">
-        </p>
-        <p class="adault-text">
-          <label for="adault">
-            Взрослые:
-          </label>
-          <input type="number" min="1" max="10" value="1" name="number_adault" id="adault">
-        </p>
-        <p class="children-text">
-          <label for="children">Дети:</label>
-          <input type="number" min="0" max="10" value="0" name="number_children" id="children">
-        </p>
+        <button class="find_hotel" type="button">поиск гостиницы в седоне</button>
+        <label for="date_check_in">
+          Дата заезда:
+          <img class="calendar_check-in" src="img/calendar.svg" alt="" width="20" height="20">
+        </label>
+        <input type="date" name="date_in" id="date_check_in" placeholder="24 апреля 2017">
+        <label for="date_check_out">
+          Дата выезда:
+          <img class="calendar_check-out" src="img/calendar.svg" alt="" width="20" height="20">
+        </label>
+        <input type="date" name="date_out" id="date_check_out" placeholder="4 июля 2017">
+        <label for="adault">
+          Взрослые:
+        </label>
+        <input type="number" min="1" max="10" value="1" name="number_adault" id="adault">
+        <label for="children">Дети:</label>
+        <input type="number" min="0" max="10" value="0" name="number_children" id="children">
         <button class="input_search" type="submit">Найти</button>
       </form>
     </section>
@@ -161,17 +155,17 @@
       <ul class="socials_list">
         <li class="social__item social__item--tw">
           <a class="social__link social__link--tw" href="#">
-            <img class="social__link_img--tw" src="img/twitter.svg" alt="" width="20" height="15">
+            <img class="social__link_img--tw" src="img/twitter.svg" alt="" width="17" height="15">
           </a>
         </li>
         <li class="social__item social__item--fb">
           <a class="social__link social__link--fb" href="#">
-            <img class="social__link_img--fb" src="img/fb-icon.svg" alt="" width="20" height="15">
+            <img class="social__link_img--fb" src="img/fb-icon.svg" alt="" width="12" height="22">
           </a>
         </li>
         <li class="social__item social__item--yt">
           <a class="social__link social__link--yt" href="#">
-            <img class="social__link_img--yt" src="img/youtube.svg" alt="" width="20" height="15">
+            <img class="social__link_img--yt" src="img/youtube.svg" alt="" width="20" height="16">
           </a>
         </li>
       </ul>
