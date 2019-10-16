@@ -1,9 +1,348 @@
-Папка для стилевых файлов.
+/* pt-sans-regular - latin */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/web/ptsans.woff2') format('woff2');
+  src: local('PT Sans-bold')
+}
 
---
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: bold;
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/web/ptsansbold.woff2') format('woff2');
+}
 
-Пример структуры файлов:
+body{
+  margin: 0;
+  padding: 0;
 
-css/
-| - style.css
-| - [другие *.css файлы]
+  font-family: 'PT Sans';
+  font-size: 14px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color:#ffffff;;
+}
+
+a{
+  text-decoration: none;
+}
+
+.input_search {
+  width: 458px;
+  height: 58px;
+
+  font: inherit;
+  font-size: 21px;
+  font-weight:bold;
+  line-height:26px;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
+}
+
+.nav{
+  font-family: 'PT Sans';
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+
+  color:#000000;
+  background-color: #ffffff;
+
+  font-style: normal;
+  letter-spacing: normal;
+
+}
+
+.nav-list{
+  list-style: none;
+}
+
+.nav-list a{
+  color: #000000;
+}
+
+.nav-list a:hover{
+  color:#81b3d2;
+}
+
+.nav-list a:focus{
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.main_greeting{
+  object-fit: contain;
+  width: 1400px;
+  height: 800px;
+  background-color: #ffffff;
+  background-image: url("../img/background-photo.jpg");
+  background-position:center;
+  background-repeat: no-repeat;
+}
+
+.description_slogan{
+  font-family: 'PT Sans';
+
+  color:#000000;
+  background-color: #ffffff;
+
+  width: 440px;
+  height: 48px;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+}
+
+.description_text{
+  font-family: 'PT Sans';
+
+  background-color: #ffffff;
+  color:#333333;
+
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: normal;
+}
+
+.main_town{
+  font-family: 'PT Sans';
+
+  width: 400px;
+  height: 256px;
+
+  font-size:14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color:#ffffff;
+  background-color: #81b3d2;
+}
+
+.main_town-content{
+  font-family: 'PT Sans';
+
+  color:#000000;
+  background-color: #81b3d2;
+
+  font-size:21px;
+  line-height:21px;
+  font-weight: bold;
+}
+
+/*.main_town-img{}*/
+
+.feutures{
+  font-family: 'PT Sans';
+
+  background-color: #ffffff;
+  color:#333333;
+
+  line-height: 21px;
+  font-size:14px;
+  font-weight: normal;
+}
+
+.feutures h3{
+  font-family: 'PT Sans';
+
+  color:#000000;
+  background-color: #ffffff;
+
+  line-height: 21px;
+  font-size:21px;
+  font-weight: bold;
+}
+
+.evil_bridge{
+  font-family: 'PT Sans';
+
+  width: 400px;
+  height: 256px;
+
+  line-height: 21px;
+  font-size:14px;
+  font-weight: normal;
+
+  color:#ffffff;
+  background-color: #81b3d2;
+}
+
+.evil_bridge-title{
+  font-family: 'PT Sans';
+
+  color:#000000;
+  background-color: #81b3d2;
+
+  font-size:21px;
+  line-height:21px;
+  font-weight: bold;
+}
+
+.advantages{
+  font-family: 'PT Sans';
+
+  font-size:14px;
+  font-weight: normal; 
+  line-height: 21px;
+
+  color:#333333;
+  background-color:#eeeeee;
+}
+
+.advantages h3{
+  font-family: 'PT Sans';
+
+
+  color:#000000;
+  background-color:#eeeeee;
+
+  font-size:21px;
+  line-height:21px;
+  font-weight: bold;
+}
+
+.advantages-list{
+  list-style:none;
+}
+
+.search_ask{
+  font-family: 'PT Sans';
+
+  color:#000000;
+  background-color: #ffffff;
+
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: bold;
+}
+
+.search_date{
+  font-family: 'PT Sans';
+
+  color:#333333;
+  background-color: #ffffff;
+
+  line-height: 24px;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.find_hotel-form input{
+  font-family: 'PT Sans';
+
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 26px;
+
+  color:#000000;
+  background-color: #f2f2f2;
+
+  font: inherit;
+  border: none;
+}
+
+.find_hotel-form input:hover{
+  background-color: #ebebeb;
+
+  border: none;
+}
+
+.find_hotel-form input:focus{
+  background-color: #ffffff;
+
+  border: 2px solid #e5e5e5;
+}
+
+.find_hotel{
+  text-transform: uppercase;
+
+  width: 568px;
+  height: 86px;
+
+  font-size: 21px;
+  font-weight: bold;
+
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.find_hotel:hover {
+  background-color: #604e43;
+}
+
+.find_hotel:focus{
+  background-color: #503e33;
+}
+
+.socials_list{
+  list-style: none;
+}
+
+
+
+/*INNER.HTML*/
+
+.hotel_search-section{
+  background-image: url("../img/filter-background.png");
+}
+
+.infrastucture{
+  font-family: 'PT Sans';
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color:#ffffff;
+  background-color: #ffffff;
+}
+
+.hotel_search-form ul{
+  list-style:none;
+}
+
+.infrastucture-list{
+  font-family: 'PT Sans';
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color:#ffffff;
+  background-color: #ffffff;
+}
+
+.hotel_type{
+  font-family: 'PT Sans';
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color:#ffffff;
+  background-color: #ffffff;
+}
+
+.hotel_type-list ul{
+  font-family: 'PT Sans';
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color:#ffffff;
+  background-color: #ffffff;
+}
