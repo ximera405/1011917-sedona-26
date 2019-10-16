@@ -2,6 +2,8 @@
 <html lang="ru">
 
 <head>
+  <link href="css/style.css" rel="stylesheet">
+  <link href="css/normalize.css" rel="stylesheet">
   <meta charset="utf-8">
   <title>HTML&nbsp;Academy: Седона</title>
 </head>
@@ -31,83 +33,84 @@
   </header>
 
   <main class="inner-main">
+    <section class="hotel_search-section">
+      <form class="hotel_search-form">
+        <fieldset class="hotel_search-fieldset">
+          <legend class="infrastucture">Инфраструктура</legend>
+          <ul class="infrastucture-list">
+            <li class="swimming_pool-item">
+              <div class="swimming_pool-checkbox-icon">
+                <img class="swimming_pool-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать инфраструктуру: бассейн"
+                  width=="" height="">
+              </div>
+              <input type="checkbox" id="swimming_pool-box" name="swimming-pool" checked>
+              <label for="swimming_pool-box">бассейн</label>
+            </li>
+            <li class="parking-item">
+              <div class="parking-checkbox-icon">
+                <img class="parking-checkbox-img" src="img/checkbox-off.svg" alt="Выбрать инфраструктуру: парковка"
+                  width=="" height="">
+              </div>
+              <input type="checkbox" id="parking-box" name="parking">
+              <label for="parking-box">парковка</label>
+            </li>
+            <li class="wifi-item">
+              <div class="wifi-checkbox-icon">
+                <img class="wifi-checkbox-img" src="img/checkbox-off.svg" alt="Выбрать инфраструктуру: wi-fi" width==""
+                  height="">
+              </div>
+              <input type="checkbox" id="wifi-box" name="wifi">
+              <label for="wifi-box">wi-fi</label>
+            </li>
+          </ul>
+        </fieldset>
 
-    <form class="hotel_search-form">
-      <fieldset class="hotel_search-fieldset">
-        <legend class="infrastucture">Инфраструктура</legend>
-        <ul class="infrastucture-list">
-          <li class="swimming_pool-item">
-            <div class="swimming_pool-checkbox-icon">
-              <img class="swimming_pool-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать инфраструктуру: бассейн"
-                width=="" height="">
-            </div>
-            <input type="checkbox" id="swimming_pool-box" name="swimming-pool" checked>
-            <label for="swimming_pool-box">бассейн</label>
-          </li>
-          <li class="parking-item">
-            <div class="parking-checkbox-icon">
-              <img class="parking-checkbox-img" src="img/checkbox-off.svg" alt="Выбрать инфраструктуру: парковка"
-                width=="" height="">
-            </div>
-            <input type="checkbox" id="parking-box" name="parking">
-            <label for="parking-box">парковка</label>
-          </li>
-          <li class="wifi-item">
-            <div class="wifi-checkbox-icon">
-              <img class="wifi-checkbox-img" src="img/checkbox-off.svg" alt="Выбрать инфраструктуру: wi-fi" width==""
-                height="">
-            </div>
-            <input type="checkbox" id="wifi-box" name="wifi">
-            <label for="wifi-box">wi-fi</label>
-          </li>
-        </ul>
-      </fieldset>
+        <fieldset>
+          <legend class="hotel_type">тип жилья</legend>
+          <ul class="hotel_type-list">
+            <li class="hotel-item">
+              <div class="hotel-checkbox-icon">
+                <img class="hotel-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать тип жилья: отель" width=""
+                  height="">
+              </div>
+              <input type="checkbox" id="hotel-box" name="hotel" checked>
+              <label for="hotel-box">Гостиница</label>
+            </li>
+            <li class="motel-item">
+              <div class="motel-checkbox-icon">
+                <img class="motel-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать тип жилья: мотель" width==""
+                  height="">
+              </div>
+              <input type="checkbox" id="motel-box" name="motel" checked>
+              <label for="motel-box">мотель</label>
+            </li>
+            <li class="apartments-item">
+              <div class="apartments-checkbox-icon">
+                <img class="apartments-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать тип жилья: апартаменты"
+                  width=="" height="">
+              </div>
+              <input type="checkbox" id="apartments-box" name="apartments" checked>
+              <label for="apartments-box">апартаменты</label>
+            </li>
+          </ul>
+        </fieldset>
 
-      <fieldset>
-        <legend class="hotel_type">тип жилья</legend>
-        <ul class="hotel_type-list">
-          <li class="hotel-item">
-            <div class="hotel-checkbox-icon">
-              <img class="hotel-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать тип жилья: отель" width=""
-                height="">
+        <fieldset>
+          <legend class="hotel_type">стоимость в сутки(Р):</legend>
+          <label for="price-from-text"></label>
+          <input type="text" id="price-from-text" name="price-from" value="от 0">
+          <label for="price-to-text"></label>
+          <input type="text" id="price-to-text" name="price-to" value="до 3000">
+          <div class="find_hotel-range">
+            <div class="range">
+              <div class="slide"></div>
+              <div class="thumb"></div>
             </div>
-            <input type="checkbox" id="hotel-box" name="hotel" checked>
-            <label for="hotel-box">отель</label>
-          </li>
-          <li class="motel-item">
-            <div class="motel-checkbox-icon">
-              <img class="motel-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать тип жилья: мотель" width==""
-                height="">
-            </div>
-            <input type="checkbox" id="motel-box" name="motel" checked>
-            <label for="motel-box">мотель</label>
-          </li>
-          <li class="apartments-item">
-            <div class="apartments-checkbox-icon">
-              <img class="apartments-checkbox-img" src="img/checkbox-on.svg" alt="Выбрать тип жилья: апартаменты"
-                width=="" height="">
-            </div>
-            <input type="checkbox" id="apartments-box" name="apartments" checked>
-            <label for="apartments-box">апартаменты</label>
-          </li>
-        </ul>
-      </fieldset>
-
-      <fieldset>
-        <legend class="hotel_type">стоимость в сутки(Р):</legend>
-        <label for="price-from-text"></label>
-        <input type="text" id="price-from-text" name="price-from" value="от 0">
-        <label for="price-to-text"></label>
-        <input type="text" id="price-to-text" name="price-to" value="до 3000">
-        <div class="find_hotel-range">
-          <div class="range">
-            <div class="slide"></div>
-            <div class="thumb"></div>
           </div>
-        </div>
-        <button class="find_hotel-button" type="submit">
-      </fieldset>
-    </form>
+          <button class="find_hotel-button" type="submit">
+        </fieldset>
+      </form>
+    </section>
 
     <section class="find_hotel-result">
       <h2 class="results-text">найдено:3</h2>
