@@ -34,23 +34,7 @@ a{
   text-decoration: none;
 }
 
-.input_search {
-  width: 458px;
-  height: 58px;
-
-  font: inherit;
-  font-size: 21px;
-  font-weight:bold;
-  line-height:26px;
-
-  text-align: center;
-  color: #ffffff;
-  vertical-align: middle;
-  text-transform: uppercase;
-
-  background-color: #81b3d2;
-  border: none;
-}
+/*___________________HEADER________________*/
 
 .nav{
   font-family: 'PT Sans';
@@ -82,6 +66,36 @@ a{
 .nav-list a:focus{
   color: rgba(0, 0, 0, 0.3);
 }
+
+/*________________FOOTER__________________*/
+
+.socials_list{
+  list-style: none;
+}
+
+.footer_tag{
+  font-family: 'PT Sans';
+
+  line-height: 26px;
+  font-size: 21px;
+  font-weight: bold;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.footer-pic{
+  font-family: 'PT Sans';
+
+  line-height: 26px;
+  font-size:  16px;
+  font-weight: normal;
+
+  color: #000000;
+  background-color: #ffffff;
+}
+
+/*________________INDEX.HTML______________*/
 
 .main_greeting{
   object-fit: contain;
@@ -287,15 +301,31 @@ a{
   background-color: #503e33;
 }
 
-.socials_list{
-  list-style: none;
+.input_search {
+  width: 458px;
+  height: 58px;
+
+  font: inherit;
+  font-size: 21px;
+  font-weight:bold;
+  line-height:26px;
+
+  text-align: center;
+  color: #ffffff;
+  vertical-align: middle;
+  text-transform: uppercase;
+
+  background-color: #81b3d2;
+  border: none;
 }
 
+/*________________________INNER.HTML_______________*/
 
+fieldset {
+  border: none;
+}
 
-/*INNER.HTML*/
-
-.hotel_search-section{
+.hotel_search-form{
   background-image: url("../img/filter-background.png");
 }
 
@@ -307,7 +337,6 @@ a{
   line-height: 21px;
 
   color:#ffffff;
-  background-color: #ffffff;
 }
 
 .hotel_search-form ul{
@@ -322,7 +351,6 @@ a{
   line-height: 21px;
 
   color:#ffffff;
-  background-color: #ffffff;
 }
 
 .hotel_type{
@@ -333,10 +361,9 @@ a{
   line-height: 21px;
 
   color:#ffffff;
-  background-color: #ffffff;
 }
 
-.hotel_type-list ul{
+.hotel_type-list{
   font-family: 'PT Sans';
 
   font-size: 14px;
@@ -344,5 +371,278 @@ a{
   line-height: 21px;
 
   color:#ffffff;
+}
+
+.hotel_price-fieldset{
+  font-family: 'PT Sans';
+
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color:#ffffff;
+}
+
+.hotel_price{
+  font-family: 'PT Sans';
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color:#ffffff;
+}
+
+.hotel_price-section input[type="text"]{
+  font-family: 'PT Sans';
+
+  text-transform: uppercase;
+  border: solid 2px #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color:#ffffff;
+  background-color: inherit;
+}
+
+.hotel_price-button{
+  font-family: 'PT Sans';
+
+  width: 133px;
+  height: 32px;
+
+  text-transform: uppercase;
+  border: solid 2px #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color:#ffffff;
+  background-color: inherit;
+}
+
+.hotel_price-button:hover{
+  font-family: 'PT Sans';
+
+  width: 133px;
+  height: 32px;
+
+  text-transform: uppercase;
+  border: solid 2px #ffffff;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color: #000000;
+  background-color: #ffffff;;
+}
+
+/*.find_hotel-result input[type="radio"]:checked, 
+.find_hotel-result input[type="radio"]:not(:checked){
+    position: absolute;
+    left: -9999px;
+}
+
+.find_hotel-result input[type="radio"]{
+  font-family: 'PT Sans';
+
+  border-bottom: 1px dashed #81b3d2;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+
   background-color: #ffffff;
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.find_hotel-result input[type="radio"]:hover{
+  font-family: 'PT Sans';
+
+  border-bottom: 1px dashed #81b3d2;
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+
+  background-color: #ffffff;
+  color: #81b3d2;
+}*/
+
+.results-text{
+  font-family: 'PT Sans';
+
+  font-size: 21px;
+  font-weight: normal;
+  line-height: 26px;
+
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.sorting-text{
+  font-family: 'PT Sans';
+
+  font-size: 12px;
+  font-weight: normal;
+  line-height: 18px;
+
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.hotels_list{
+  list-style: none;
+}
+/* отели*/
+.amara-resort_name,
+.desert-quill_name,
+.villas-diablo_name{
+  font-family: 'PT Sans';
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+
+  color:#000000;
+  background-color: #ffffff;
+}
+
+.amara-resort_type,
+.amara-resort_price,
+.desert-quill_type,
+.desert-quill_price,
+.villas-diablo_type,
+.villas-diablo_price{
+  font-family: 'PT Sans';
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color: #333333;
+  background-color: #ffffff;
+}
+
+.amara-resort_rate,
+.desert-quill_rate,
+.villas-diablo_rate{
+  width: 110px;
+  height: 27px;
+  
+  font-family: 'PT Sans';
+
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 21px;
+
+  color: #666666;
+  background-color: #f2f2f2;
+}
+
+.amara-resort_more,
+.villas-diablo_more,
+.desert-quill_more{
+  width: 110px;
+  height: 27px;
+  
+  font-family: 'PT Sans';
+
+  text-transform:uppercase;
+  border:none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color: #ffffff;
+  background-color: #81b3d2;
+}
+
+.amara-resort_more:hover,
+.villas-diablo_more:hover,
+.desert-quill_more:hover{
+  width: 110px;
+  height: 27px;
+  
+  font-family: 'PT Sans';
+
+  text-transform:uppercase;
+  border:none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color: #ffffff;
+  background-color: #669ec0;
+}
+
+.amara-resort_more:active,
+.villas-diablo_more:active,
+.desert-quill_more:active{
+  width: 110px;
+  height: 27px;
+  
+  font-family: 'PT Sans';
+
+  text-transform:uppercase;
+  border:none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #5496bd;
+}
+
+.amara-resort_reserve,
+.desert-quill_reserve,
+.villas-diablo_reserve{
+  width: 142px;
+  height: 27px;
+  
+  font-family: 'PT Sans';
+
+  text-transform:uppercase;
+  border:none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color: #ffffff;
+  background-color: #766357;
+}
+
+.amara-resort_reserve:hover,
+.desert-quill_reserve:hover,
+.villas-diablo_reserve:hover{
+  width: 142px;
+  height: 27px;
+  
+  font-family: 'PT Sans';
+
+  text-transform:uppercase;
+  border:none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color: #ffffff;
+  background-color: #604e43;
+}
+
+.amara-resort_reserve:active,
+.desert-quill_reserve:active,
+.villas-diablo_reserve:active{
+  width: 142px;
+  height: 27px;
+  
+  font-family: 'PT Sans';
+
+  text-transform:uppercase;
+  border:none;
+  font-size: 12px;
+  font-weight: bold;
+  line-height: 21px;
+
+  color: rgba(255, 255, 255, 0.3);
+  background-color: #503e33;
 }

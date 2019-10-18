@@ -33,8 +33,8 @@
   </header>
 
   <main class="inner-main">
-    <section class="hotel_search-section">
-      <form class="hotel_search-form">
+    <form class="hotel_search-form">
+      <section class="hotel_search-section">
         <fieldset class="hotel_search-fieldset">
           <legend class="infrastucture">Инфраструктура</legend>
           <ul class="infrastucture-list">
@@ -64,8 +64,10 @@
             </li>
           </ul>
         </fieldset>
+      </section>
 
-        <fieldset>
+      <section class="hotel_type-section">
+        <fieldset class="hotel_type-fieldset">
           <legend class="hotel_type">тип жилья</legend>
           <ul class="hotel_type-list">
             <li class="hotel-item">
@@ -94,23 +96,25 @@
             </li>
           </ul>
         </fieldset>
+      </section>
 
-        <fieldset>
-          <legend class="hotel_type">стоимость в сутки(Р):</legend>
+      <section class="hotel_price-section">
+        <fieldset class="hotel_price-fieldset">
+          <legend class="hotel_price">стоимость в сутки(Р):</legend>
           <label for="price-from-text"></label>
           <input type="text" id="price-from-text" name="price-from" value="от 0">
           <label for="price-to-text"></label>
           <input type="text" id="price-to-text" name="price-to" value="до 3000">
-          <div class="find_hotel-range">
+          <div class="hotel_price-range">
             <div class="range">
               <div class="slide"></div>
               <div class="thumb"></div>
             </div>
+            <button class="hotel_price-button" type="submit">показать</button>
           </div>
-          <button class="find_hotel-button" type="submit">
         </fieldset>
-      </form>
-    </section>
+      </section>
+    </form>
 
     <section class="find_hotel-result">
       <h2 class="results-text">найдено:3</h2>
@@ -148,10 +152,12 @@
           <h2 class="amara-resort_name">Amara Resort &amp;&nbsp;Spa</h2>
           <p class="amara-resort_type">Гостиница</p>
           <p class="amara-resort_price">От&nbsp;4000&nbsp;Р.</p>
-          <a class="amara-resort_more" href="#">Подробнее</a>
-          <a class="amara-resort_reserve" href="#">Зарезервировать</a>
+          <button class="amara-resort_more" type="button">Подробнее</button>
+          <button class="amara-resort_reserve" type="button">Забронировать</button>
           <div class="amara-resort_stars"></div>
-          <p class="amara-resort_rate">Рейтинг:8.5</p>
+          <div class="div-rate">
+            <p class="amara-resort_rate">Рейтинг:8.5</p>
+          </div>
         </li>
 
         <li class="desert-quill">
@@ -159,10 +165,12 @@
           <h2 class="desert-quill_name">Desert Quail Inn</h2>
           <p class="desert-quill_type">Мотель</p>
           <p class="desert-quill_price">От&nbsp;3000&nbsp;Р.</p>
-          <a class="desert-quill_more" href="#">Подробнее</a>
-          <a class="desert-quill_reserve" href="#">Зарезервировать</a>
+          <button class="desert-quill_more" type="button">Подробнее</button>
+          <button class="desert-quill_reserve" type="button">Забронировать</button>
           <div class="desert-quill_stars"></div>
-          <p class="desert-quill_rate">Рейтинг:8.9</p>
+          <div class="div-rate">
+            <p class="desert-quill_rate">Рейтинг:8.9</p>
+          </div>
         </li>
 
         <li class=="villas-diablo">
@@ -170,12 +178,13 @@
           <h2 class="villas-diablo_name">Villas at&nbsp;Poco Diablo</h2>
           <p class="villas-diablo_type">Апартаменты</p>
           <p class="villas-diablo_price">От&nbsp;2000&nbsp;Р.</p>
-          <a class="villas-diablo_more" href="#">Подробнее</a>
-          <a class="villas-diablo_reserve" href="#">Зарезервировать</a>
+          <button class="villas-diablo_more" type="button">Подробнее</button>
+          <button class="villas-diablo_reserve" type="button">Забронировать</button>
           <div class="villas-diablo_stars"></div>
-          <p class="villas-diablo_rate">Рейтинг:9.2</p>
+          <div class="div-rate">
+            <p class="villas-diablo_rate">Рейтинг:9.2</p>
+          </div>
         </li>
-
       </ul>
     </section>
   </main>
