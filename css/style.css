@@ -36,21 +36,57 @@ a{
 
 /*___________________HEADER________________*/
 
-.nav{
-  font-family: 'PT Sans';
+/*.nav{
+  min-width: 1200px;
+  height: 56px;
 
   font-size: 14px;
   font-weight: bold;
-  line-height: 26px;
+  line-height: 12px;
 
   color:#000000;
   background-color: #ffffff;
-
-  font-style: normal;
-  letter-spacing: normal;
-
 }
 
+.nav-list{
+  list-style: none;
+
+  margin: 0;
+  padding: -1px;
+}
+
+.nav-list li{
+  display: inline-block;
+  border: none;
+}
+
+.nav-item:first-child{
+  margin-left: -42px;
+}
+
+.nav-item{
+  vertical-align: top;
+
+  width: 239px;
+  height: inherit;
+
+  margin-left: -4.7px;
+
+  text-align: center;
+  padding-top: 22px;
+  padding-bottom: 22px;
+}
+
+.nav_item-img{
+  text-align: center;
+  padding-top: 0;
+
+  width: 244px;
+  height: inherit;
+
+  margin-left: -4.7px;
+}
+*/
 .nav-list{
   list-style: none;
 }
@@ -69,47 +105,113 @@ a{
 
 /*________________FOOTER__________________*/
 
-.socials_list{
-  list-style: none;
+.footer{
+  display: block;
+
+  background-color: #ffffff;
+  opacity: 0.9;
 }
 
 .footer_tag{
-  font-family: 'PT Sans';
-
   line-height: 26px;
   font-size: 21px;
   font-weight: bold;
 
   color: #000000;
-  background-color: #ffffff;
 }
 
 .footer-pic{
-  font-family: 'PT Sans';
-
   line-height: 26px;
   font-size:  16px;
   font-weight: normal;
 
   color: #000000;
-  background-color: #ffffff;
+}
+
+.socials_list{
+  list-style: none;
+}
+
+.social_link{
+  opacity: 1.1;
+
+  display: inline-block;
+
+  text-align: center;
+  vertical-align: middle;
+
+  width: 46px;
+  height: 48px;
+
+  background-color: #81b3d2;
+}
+
+.social__link_img--tw{
+  padding-top: 17px;
+  padding-right: 14px;
+  padding-bottom: 16px;
+  padding-left: 15px;
+}
+
+.social__link_img--fb{
+  padding-top: 13px;
+  padding-right: 17px;
+  padding-bottom: 13px;
+  padding-left: 18px;
+}
+
+.social__link_img--yt{
+  padding-top: 16px;
+  padding-right: 13px;
+  padding-bottom: 16px;
+  padding-left: 13px;
+}
+
+.social_link:hover{
+  background-color: #669ec0;
+}
+
+.social_link:active
+{
+  background-color: #5496bd;
+}
+
+.social__link_img--tw:active,
+.social__link_img--fb:active,
+.social__link_img--yt:active{
+  opacity: 0.3;
+}
+
+.htmlacademy-logo svg path{
+  fill: #231f20;
+}
+
+.htmlacademy-logo:hover path{
+  fill: #81b3d2;
+}
+
+.htmlacademy-logo:active path{
+  fill: #bdbbbc;
 }
 
 /*________________INDEX.HTML______________*/
 
 .main_greeting{
-  object-fit: contain;
-  width: 1400px;
-  height: 800px;
-  background-color: #ffffff;
   background-image: url("../img/background-photo.jpg");
-  background-position:center;
   background-repeat: no-repeat;
+  background-size: 1200px 773px;
+}
+
+.greeting_title{
+  display: inline-block;
+
+  margin-left: 370px;
+  margin-right: 371px;
+  margin-top: 76px;
+  margin-bottom: 288px;
 }
 
 .description_slogan{
-  font-family: 'PT Sans';
-
   color:#000000;
   background-color: #ffffff;
 
@@ -121,8 +223,6 @@ a{
 }
 
 .description_text{
-  font-family: 'PT Sans';
-
   background-color: #ffffff;
   color:#333333;
 
@@ -132,8 +232,6 @@ a{
 }
 
 .main_town{
-  font-family: 'PT Sans';
-
   width: 400px;
   height: 256px;
 
@@ -146,8 +244,6 @@ a{
 }
 
 .main_town-content{
-  font-family: 'PT Sans';
-
   color:#000000;
   background-color: #81b3d2;
 
@@ -159,8 +255,6 @@ a{
 /*.main_town-img{}*/
 
 .feutures{
-  font-family: 'PT Sans';
-
   background-color: #ffffff;
   color:#333333;
 
@@ -170,8 +264,6 @@ a{
 }
 
 .feutures h3{
-  font-family: 'PT Sans';
-
   color:#000000;
   background-color: #ffffff;
 
@@ -181,8 +273,6 @@ a{
 }
 
 .evil_bridge{
-  font-family: 'PT Sans';
-
   width: 400px;
   height: 256px;
 
@@ -195,8 +285,6 @@ a{
 }
 
 .evil_bridge-title{
-  font-family: 'PT Sans';
-
   color:#000000;
   background-color: #81b3d2;
 
@@ -206,8 +294,6 @@ a{
 }
 
 .advantages{
-  font-family: 'PT Sans';
-
   font-size:14px;
   font-weight: normal; 
   line-height: 21px;
@@ -217,9 +303,6 @@ a{
 }
 
 .advantages h3{
-  font-family: 'PT Sans';
-
-
   color:#000000;
   background-color:#eeeeee;
 
@@ -233,8 +316,6 @@ a{
 }
 
 .search_ask{
-  font-family: 'PT Sans';
-
   color:#000000;
   background-color: #ffffff;
 
@@ -244,8 +325,6 @@ a{
 }
 
 .search_date{
-  font-family: 'PT Sans';
-
   color:#333333;
   background-color: #ffffff;
 
@@ -255,8 +334,6 @@ a{
 }
 
 .find_hotel-form input{
-  font-family: 'PT Sans';
-
   font-size: 14px;
   font-weight: bold;
   line-height: 26px;
@@ -319,6 +396,18 @@ a{
   border: none;
 }
 
+/*.map{
+ z-index: -1;
+
+  width: 1200px;
+  height: 593px;
+
+  position: absolute;
+  margin-bottom: 0;
+  margin-right: 0;
+  margin-left: 0;
+}*/
+
 /*________________________INNER.HTML_______________*/
 
 fieldset {
@@ -330,8 +419,6 @@ fieldset {
 }
 
 .infrastucture{
-  font-family: 'PT Sans';
-
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
@@ -344,8 +431,6 @@ fieldset {
 }
 
 .infrastucture-list{
-  font-family: 'PT Sans';
-
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -354,8 +439,6 @@ fieldset {
 }
 
 .hotel_type{
-  font-family: 'PT Sans';
-
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
@@ -364,8 +447,6 @@ fieldset {
 }
 
 .hotel_type-list{
-  font-family: 'PT Sans';
-
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -374,8 +455,6 @@ fieldset {
 }
 
 .hotel_price-fieldset{
-  font-family: 'PT Sans';
-
   font-size: 16px;
   font-weight: bold;
   line-height: 21px;
@@ -384,8 +463,6 @@ fieldset {
 }
 
 .hotel_price{
-  font-family: 'PT Sans';
-
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -394,8 +471,6 @@ fieldset {
 }
 
 .hotel_price-section input[type="text"]{
-  font-family: 'PT Sans';
-
   text-transform: uppercase;
   border: solid 2px #ffffff;
   font-size: 14px;
@@ -407,8 +482,6 @@ fieldset {
 }
 
 .hotel_price-button{
-  font-family: 'PT Sans';
-
   width: 133px;
   height: 32px;
 
@@ -423,8 +496,6 @@ fieldset {
 }
 
 .hotel_price-button:hover{
-  font-family: 'PT Sans';
-
   width: 133px;
   height: 32px;
 
@@ -438,39 +509,58 @@ fieldset {
   background-color: #ffffff;;
 }
 
-/*.find_hotel-result input[type="radio"]:checked, 
-.find_hotel-result input[type="radio"]:not(:checked){
+/*.infrastucture-list input[type="checkbox"]:checked, 
+.infrastucture-list input[type="checkbox"]:not(:checked){
     position: absolute;
     left: -9999px;
 }
 
-.find_hotel-result input[type="radio"]{
-  font-family: 'PT Sans';
-
-  border-bottom: 1px dashed #81b3d2;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 18px;
-
-  background-color: #ffffff;
-  color: rgba(0, 0, 0, 0.3);
+.infrastucture-list input[type="checkbox"]:checked + label,
+.infrastucture-list input[type="checkbox"]:not(:checked) + label{
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
 }
 
-.find_hotel-result input[type="radio"]:hover{
-  font-family: 'PT Sans';
+.infrastucture-list input[type="checkbox"]:checked + label:before,
+.infrastucture-list input[type="checkbox"]:not(:checked) + label:before{
+  content: "";
+  position: absolute;
+  left: -13px;
+  top: 0px;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  background-color: inherit;
 
-  border-bottom: 1px dashed #81b3d2;
-  font-size: 12px;
-  font-weight: normal;
-  line-height: 18px;
+  border-radius: 2px;
+}
 
-  background-color: #ffffff;
-  color: #81b3d2;
-}*/
+.infrastucture-list input[type="checkbox"]:checked + label:after,
+.infrastucture-list input[type="checkbox"]:not(:checked) + label:after{
+  content: "";
+  position: absolute;
+  left: -8px;
+  top: 2px;
+  width: 18px;
+  height: 7px;
+  border-radius: 1px;
+  border-left: 4px solid #ffffff;
+  border-bottom: 4px solid #ffffff;
+  transform: rotate(-45deg);
+}
 
+.infrastucture-list input[type="checkbox"]:not(:checked) + label:after{
+  opacity: 0;
+}
+
+.infrastucture-list input[type="checkbox"]:checked + label:after{
+  opacity: 1;
+}
+*/
 .results-text{
-  font-family: 'PT Sans';
-
   font-size: 21px;
   font-weight: normal;
   line-height: 26px;
@@ -480,8 +570,6 @@ fieldset {
 }
 
 .sorting-text{
-  font-family: 'PT Sans';
-
   font-size: 12px;
   font-weight: normal;
   line-height: 18px;
@@ -497,7 +585,7 @@ fieldset {
 .amara-resort_name,
 .desert-quill_name,
 .villas-diablo_name{
-  font-family: 'PT Sans';
+  border: none;
 
   font-size: 21px;
   font-weight: bold;
@@ -507,14 +595,38 @@ fieldset {
   background-color: #ffffff;
 }
 
+.amara-resort_name:hover,
+.desert-quill_name:hover,
+.villas-diablo_name:hover{
+  border: none;
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+
+  color: #81b3d2;
+  background-color: #ffffff;
+}
+
+.amara-resort_name:active,
+.desert-quill_name:active,
+.villas-diablo_name:active{
+  border: none;
+
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 26px;
+
+  color: rgba(0, 0, 0, 0.3);
+  background-color: #ffffff;
+}
+
 .amara-resort_type,
 .amara-resort_price,
 .desert-quill_type,
 .desert-quill_price,
 .villas-diablo_type,
 .villas-diablo_price{
-  font-family: 'PT Sans';
-
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -529,8 +641,6 @@ fieldset {
   width: 110px;
   height: 27px;
   
-  font-family: 'PT Sans';
-
   font-size: 14px;
   font-weight: normal;
   line-height: 21px;
@@ -545,8 +655,6 @@ fieldset {
   width: 110px;
   height: 27px;
   
-  font-family: 'PT Sans';
-
   text-transform:uppercase;
   border:none;
   font-size: 12px;
@@ -563,8 +671,6 @@ fieldset {
   width: 110px;
   height: 27px;
   
-  font-family: 'PT Sans';
-
   text-transform:uppercase;
   border:none;
   font-size: 12px;
@@ -581,8 +687,6 @@ fieldset {
   width: 110px;
   height: 27px;
   
-  font-family: 'PT Sans';
-
   text-transform:uppercase;
   border:none;
   font-size: 12px;
@@ -599,8 +703,6 @@ fieldset {
   width: 142px;
   height: 27px;
   
-  font-family: 'PT Sans';
-
   text-transform:uppercase;
   border:none;
   font-size: 12px;
@@ -617,8 +719,6 @@ fieldset {
   width: 142px;
   height: 27px;
   
-  font-family: 'PT Sans';
-
   text-transform:uppercase;
   border:none;
   font-size: 12px;
@@ -635,8 +735,6 @@ fieldset {
   width: 142px;
   height: 27px;
   
-  font-family: 'PT Sans';
-
   text-transform:uppercase;
   border:none;
   font-size: 12px;
