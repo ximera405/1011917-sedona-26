@@ -2,23 +2,20 @@
   font-weight: 400;
   font-family: 'PT Sans';
   font-style: normal;
-  src: local('PT Sans'), local('PTSans-Regular'),
-    url('../fonts/web/ptsans.woff2') format('woff2');
-  src: local('PT Sans'), local('PTSans-Regular'),
+  src: 
+    url('../fonts/web/ptsans.woff2') format('woff2'),
     url('../fonts/web/ptsans.woff') format('woff');
-  src: local('PT Sans-bold');
-  font-display: auto;
+  font-display: swap;
 }
 
 @font-face {
   font-weight: bold;
   font-family: 'PT Sans';
   font-style: normal;
-  src: local('PT Sans'), local('PTSans-Regular'),
-    url('../fonts/web/ptsansbold.woff2') format('woff2');
-  src: local('PT Sans'), local('PTSans-Regular'),
-    url('../fonts/web/ptsans.woff') format('woff');
-  font-display: auto;
+  src: 
+    url('../fonts/web/ptsansbold.woff2') format('woff2'),
+    url('../fonts/web/ptsansbold.woff') format('woff');
+  font-display: swap;
 }
 
 body {
@@ -192,6 +189,8 @@ a {
 .main_greeting {
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
+  background-position-x: 0px;
+  background-position-y: -56px;
   background-size: 1200px 773px;
 }
 
@@ -204,23 +203,47 @@ a {
   margin-left: 370px;
 }
 
+.description {
+  width: 1200px;
+  height: 216px;
+
+  background-color: white;
+}
+
 .description_slogan {
+  display: inline-block;
+
   width: 440px;
   height: 48px;
+  margin-top: 61px;
+  margin-right: 380px;
+  margin-bottom: 107px;
+
+  margin-left: 380px;
+
   font-weight: bold;
-  font-size: 21px;
-  line-height: 26px;
+  font-size: 18px;
+  line-height: 23px;
+  line-height: 1.24;
+  text-align: center;
   color: #000000;
+  font-stretch: normal;
   background-color: #ffffff;
 }
 
 .description_text {
+  display: inline-block;
+  margin-top: 38px;
+  margin-right: 356px;
+  margin-bottom: 56px;
+
+  margin-left: 355px;
+
   font-weight: normal;
 
-  font-size: 14px;
-  line-height: 26px;
+  font-size: 13px;
+  line-height: 13px;
   color: #333333;
-  background-color: #ffffff;
 }
 
 .main_town {
