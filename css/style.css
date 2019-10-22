@@ -46,7 +46,7 @@ a {
   font-weight: bold;
 
   font-size: 14px;
-  line-height: 12px;
+  line-height: 26px;
 
   color: #000000;
   background-color: #ffffff;
@@ -58,7 +58,10 @@ a {
 
   align-items: flex-start;
 
-  margin: 0;
+  margin-top: 0;
+  margin-left: auto;
+  margin-right: auto;
+  
   padding: -1px;
   list-style: none;
 }
@@ -66,6 +69,7 @@ a {
 .nav-item {
   width: 239px;
   height: inherit;
+
   padding-top: 22px;
   padding-bottom: 22px;
 
@@ -211,38 +215,35 @@ a {
 }
 
 .description_slogan {
-  display: inline-block;
+  display: block;
 
   width: 440px;
   height: 48px;
   margin-top: 61px;
-  margin-right: 380px;
+  margin-right: auto;
   margin-bottom: 107px;
-
-  margin-left: 380px;
+  margin-left: auto;
 
   font-weight: bold;
-  font-size: 18px;
-  line-height: 23px;
-  line-height: 1.24;
+  font-size: 21px;
+  line-height: 26px;
   text-align: center;
   color: #000000;
-  font-stretch: normal;
   background-color: #ffffff;
 }
 
 .description_text {
-  display: inline-block;
-  margin-top: 38px;
-  margin-right: 356px;
-  margin-bottom: 56px;
+  display: block;
 
-  margin-left: 355px;
+  margin-top: 38px;
+  margin-right: auto;
+  margin-bottom: 56px;
+  margin-left: auto;
 
   font-weight: normal;
 
-  font-size: 13px;
-  line-height: 13px;
+  font-size: 14px;
+  line-height: 26px;
   color: #333333;
 }
 
@@ -263,6 +264,7 @@ a {
 
   font-size: 21px;
   line-height: 21px;
+  text-align: center;
   color: #000000;
   background-color: #81b3d2;
 }
@@ -272,6 +274,7 @@ a {
 .feutures {
   font-weight: normal;
   font-size: 14px;
+  text-align: center;
 
   line-height: 21px;
   color: #333333;
@@ -294,6 +297,7 @@ a {
   font-size: 14px;
 
   line-height: 21px;
+  text-align: center;
 
   color: #ffffff;
   background-color: #81b3d2;
@@ -312,6 +316,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
 
   color: #333333;
   background-color: #eeeeee;
@@ -333,15 +338,17 @@ a {
 .search_ask {
   font-weight: bold;
 
+  text-align: center;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
   background-color: #ffffff;
 }
 
-.search_date {
+.search_ask-description {
   font-weight: normal;
   font-size: 14px;
+  text-align: center;
 
   line-height: 24px;
   color: #333333;
@@ -349,11 +356,11 @@ a {
 }
 
 .find_hotel-form input {
-
   font: inherit;
   font-weight: bold;
   font-size: 14px;
   line-height: 26px;
+  text-align: left;
 
   color: #000000;
   background-color: #f2f2f2;
@@ -370,6 +377,11 @@ a {
   background-color: #ffffff;
 
   border: 2px solid #e5e5e5;
+}
+
+#adult, 
+#children{
+  text-align: center;
 }
 
 .find_hotel {
@@ -469,17 +481,9 @@ a {
   color: #ffffff;
 }
 
-.hotel_price-fieldset {
+.hotel_price {
   font-weight: bold;
   font-size: 16px;
-  line-height: 21px;
-
-  color: #ffffff;
-}
-
-.hotel_price {
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 
   color: #ffffff;
@@ -489,6 +493,7 @@ a {
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
 
   color: #ffffff;
   text-transform: uppercase;
@@ -511,18 +516,9 @@ a {
 }
 
 .hotel_price-button:hover {
-  width: 133px;
-  height: 32px;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-
   color: #000000;
 
-  text-transform: uppercase;
   background-color: #ffffff;
-  border: solid 2px #ffffff;
-  ;
 }
 
 .infrastucture-list input[type="checkbox"]:checked,
@@ -577,7 +573,7 @@ a {
 }
 
 .results-text {
-  font-weight: normal;
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 
@@ -615,27 +611,13 @@ a {
 .amara-resort_name:hover,
 .desert-quill_name:hover,
 .villas-diablo_name:hover {
-  font-weight: bold;
-
-  font-size: 21px;
-  line-height: 26px;
-
   color: #81b3d2;
-  background-color: #ffffff;
-  border: none;
 }
 
 .amara-resort_name:active,
 .desert-quill_name:active,
 .villas-diablo_name:active {
-  font-weight: bold;
-
-  font-size: 21px;
-  line-height: 26px;
-
   color: rgba(0, 0, 0, 0.3);
-  background-color: #ffffff;
-  border: none;
 }
 
 .amara-resort_type,
@@ -661,6 +643,7 @@ a {
 
   font-size: 14px;
   line-height: 21px;
+  text-align: center;
 
   color: #666666;
   background-color: #f2f2f2;
@@ -672,7 +655,7 @@ a {
   width: 110px;
   height: 27px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 21px;
 
   color: #ffffff;
@@ -685,33 +668,14 @@ a {
 .amara-resort_more:hover,
 .villas-diablo_more:hover,
 .desert-quill_more:hover {
-  width: 110px;
-  height: 27px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 21px;
-
-  color: #ffffff;
-
-  text-transform: uppercase;
   background-color: #669ec0;
-  border: none;
 }
 
 .amara-resort_more:active,
 .villas-diablo_more:active,
 .desert-quill_more:active {
-  width: 110px;
-  height: 27px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 21px;
-
   color: rgba(255, 255, 255, 0.3);
-
-  text-transform: uppercase;
   background-color: #5496bd;
-  border: none;
 }
 
 .amara-resort_reserve,
@@ -720,7 +684,7 @@ a {
   width: 142px;
   height: 27px;
   font-weight: bold;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 21px;
 
   color: #ffffff;
@@ -733,31 +697,12 @@ a {
 .amara-resort_reserve:hover,
 .desert-quill_reserve:hover,
 .villas-diablo_reserve:hover {
-  width: 142px;
-  height: 27px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 21px;
-
-  color: #ffffff;
-
-  text-transform: uppercase;
   background-color: #604e43;
-  border: none;
 }
 
 .amara-resort_reserve:active,
 .desert-quill_reserve:active,
 .villas-diablo_reserve:active {
-  width: 142px;
-  height: 27px;
-  font-weight: bold;
-  font-size: 12px;
-  line-height: 21px;
-
   color: rgba(255, 255, 255, 0.3);
-
-  text-transform: uppercase;
   background-color: #503e33;
-  border: none;
 }
