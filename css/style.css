@@ -103,13 +103,23 @@ a {
 /*________________FOOTER__________________*/
 
 .footer {
-  display: block;
+  width: 1200px;
+
+  display: flex;
 
   background-color: #ffffff;
   opacity: 0.9;
 }
 
 .footer_tag {
+  width: 136px;
+  min-height: 100px;
+
+  margin-top: auto;
+  margin-bottom: auto;
+  margin-left: 132px;
+  margin-right: 256px;
+
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
@@ -126,6 +136,11 @@ a {
 }
 
 .socials_list {
+  width: 150px;
+  min-height: 100px;
+
+  margin: auto;
+
   list-style: none;
 }
 
@@ -139,6 +154,7 @@ a {
   text-align: center;
 
   background-color: #81b3d2;
+  opacity: 1;
 }
 
 .social__link_img--tw {
@@ -176,6 +192,14 @@ a {
   opacity: 0.3;
 }
 
+.footer-pic {
+  width: 189px;
+  min-height: 100px;
+
+  margin: 0;
+  margin-left: 100%;
+}
+
 .htmlacademy-logo svg path {
   fill: #231f20;
 }
@@ -208,6 +232,8 @@ a {
 }
 
 .description {
+  display: block;
+
   width: 1200px;
   height: 216px;
 
@@ -221,7 +247,6 @@ a {
   height: 48px;
   margin-top: 61px;
   margin-right: auto;
-  margin-bottom: 107px;
   margin-left: auto;
 
   font-weight: bold;
@@ -235,9 +260,11 @@ a {
 .description_text {
   display: block;
 
+  width: 489px;
+  height: 13px;
+
   margin-top: 38px;
   margin-right: auto;
-  margin-bottom: 56px;
   margin-left: auto;
 
   font-weight: normal;
@@ -248,15 +275,29 @@ a {
 }
 
 .main_town {
-  width: 400px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+
+  width: 1200px;
   height: 256px;
-  font-weight: normal;
-
-  font-size: 14px;
-  line-height: 21px;
-
-  color: #ffffff;
   background-color: #81b3d2;
+}
+
+.main_town-text-block {
+  display: block;
+
+  width: 400;
+  height: 256px;
+
+  background-color: #81b3d2;
+}
+
+.main_town-img{
+
+  display: block;
+  width: 800px;
+  height: 256px;
 }
 
 .main_town-content {
@@ -265,13 +306,27 @@ a {
   font-size: 21px;
   line-height: 21px;
   text-align: center;
-  color: #000000;
-  background-color: #81b3d2;
+  color: white;
 }
 
-/*.main_town-img{}*/
+.main_town-number,
+.main_town-text{
+  font-weight: normal;
+
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+
+  color: #ffffff;
+}
 
 .feutures {
+
+  display: flex;
+  flex-direction: row;
+  width: 1200px;
+  height: 330px;
+
   font-weight: normal;
   font-size: 14px;
 
@@ -279,6 +334,16 @@ a {
   text-align: center;
   color: #333333;
   background-color: #ffffff;
+}
+
+.feautures_house,
+.feautures_food,
+.feautures_souvenirs{
+  display: block;
+  width: 400px;
+  height: 330px;
+
+  border: none;
 }
 
 .feutures h3 {
@@ -291,8 +356,35 @@ a {
 }
 
 .evil_bridge {
+  display: flex;
+  flex-direction: row;  
+
+  width: 1200px;
+  height: 256px;
+  background-color: #81b3d2;
+}
+
+.evil_bridge-img{
+  display: block;
+}
+
+.evil_bridge-text-block{
+  display: block;
   width: 400px;
   height: 256px;
+}
+
+.evil_bridge-title {
+  font-weight: bold;
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  color: white;
+  background-color: #81b3d2;
+}
+
+.evil_bridge-number,
+.evil_bridge-text {
   font-weight: normal;
   font-size: 14px;
 
@@ -300,19 +392,11 @@ a {
   text-align: center;
 
   color: #ffffff;
-  background-color: #81b3d2;
-}
-
-.evil_bridge-title {
-  font-weight: bold;
-
-  font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #81b3d2;
 }
 
 .advantages {
+  width: 1200px;
+  height: 256px;
   font-weight: normal;
   font-size: 14px;
   line-height: 21px;
@@ -320,6 +404,20 @@ a {
 
   color: #333333;
   background-color: #eeeeee;
+}
+
+.advantages-list {
+  display: flex;
+  flex-direction: row;
+
+  list-style: none;
+}
+
+.advantages-item{
+  display: block;
+
+  width: 400px;
+  height: 256px;
 }
 
 .advantages h3 {
@@ -331,8 +429,34 @@ a {
   background-color: #eeeeee;
 }
 
-.advantages-list {
-  list-style: none;
+.search {
+  width: 1200px;
+  max-height: 1000px;
+}
+
+.search_text-container {
+  display: block;
+
+  width: 434px;
+  height: 96px;
+
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 57px;
+  margin-bottom: 138px;
+}
+
+.find_hotel-form-conainer {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  flex-wrap: wrap;
+
+  width: 568px;
+  height: 395px;
+
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .search_ask {
@@ -379,8 +503,7 @@ a {
   border: 2px solid #e5e5e5;
 }
 
-#adult, 
-#children{
+.find_hotel-form input[type="number"] {
   text-align: center;
 }
 
