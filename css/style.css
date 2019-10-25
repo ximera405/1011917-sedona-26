@@ -26,7 +26,7 @@ body {
   line-height: 24px;
 
   font-family: 'PT Sans';
-  color: #000000;
+  color: black;
   text-transform: uppercase;
 
   background-color: white;
@@ -48,13 +48,12 @@ a {
   font-size: 14px;
   line-height: 26px;
 
-  color: #000000;
+  color: black;
   background-color: white;
 }
 
 .nav-list {
   display: flex;
-  flex-direction: row;
 
   align-items: flex-start;
 
@@ -89,7 +88,7 @@ a {
 }
 
 .nav-list a {
-  color: #000000;
+  color: black;
 }
 
 .nav-list a:hover {
@@ -123,7 +122,7 @@ a {
   font-size: 21px;
   line-height: 26px;
 
-  color: #000000;
+  color: black;
 }
 
 .footer-pic {
@@ -131,7 +130,7 @@ a {
   font-size: 16px;
   line-height: 26px;
 
-  color: #000000;
+  color: black;
 }
 
 .socials_list {
@@ -213,6 +212,9 @@ a {
 /*________________INDEX.HTML______________*/
 
 .main_greeting {
+  width: 1200px;
+  min-height: 450px;
+
   background-image: url("../img/background-photo.jpg");
   background-repeat: no-repeat;
   background-position-x: 0px;
@@ -221,43 +223,30 @@ a {
 }
 
 .greeting_title {
-  display: inline-block;
-  margin-top: 76px;
-  margin-right: 371px;
-  margin-bottom: 288px;
-
-  margin-left: 370px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 76px;
+  padding-bottom: 288px;
 }
 
 .description {
-  display: block;
-
   width: 1200px;
   min-height: 216px;
-
-  background-color: white;
 }
 
 .description_slogan {
-  display: block;
-
   width: 440px;
   min-height: 48px;
   margin-top: 61px;
   margin-right: auto;
   margin-left: auto;
 
-  font-weight: bold;
-  font-size: 21px;
   line-height: 26px;
   text-align: center;
-  color: #000000;
-  background-color: white;
 }
 
 .description_text {
-  display: block;
-
   width: 489px;
   min-height: 13px;
 
@@ -267,15 +256,12 @@ a {
 
   font-weight: normal;
 
-  font-size: 14px;
   line-height: 26px;
   color: #333333;
 }
 
 .main_town {
   display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
 
   width: 1200px;
   min-height: 256px;
@@ -283,23 +269,13 @@ a {
 }
 
 .main_town-text-block {
-  display: block;
-
-  width: 400;
+  width: 400px;
   min-height: 256px;
 
   background-color: #81b3d2;
 }
 
-.main_town-img {
-  display: block;
-  width: 800px;
-  min-height: 256px;
-}
-
 .main_town-content {
-  font-weight: bold;
-
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -310,7 +286,6 @@ a {
 .main_town-text {
   font-weight: normal;
 
-  font-size: 14px;
   line-height: 21px;
   text-align: center;
 
@@ -319,7 +294,6 @@ a {
 
 .feutures {
   display: flex;
-  flex-direction: row;
   width: 1200px;
   min-height: 330px;
 
@@ -345,25 +319,18 @@ a {
   font-size: 21px;
 
   line-height: 21px;
-  color: #000000;
-  background-color: white;
+  color: black;
 }
 
 .evil_bridge {
   display: flex;
-  flex-direction: row;  
 
   width: 1200px;
   min-height: 256px;
   background-color: #81b3d2;
 }
 
-.evil_bridge-img{
-  display: block;
-}
-
 .evil_bridge-text-block{
-  display: block;
   width: 400px;
   min-height: 256px;
 }
@@ -402,14 +369,11 @@ a {
 
 .advantages-list {
   display: flex;
-  flex-direction: row;
 
   list-style: none;
 }
 
 .advantages-item{
-  display: block;
-
   width: 400px;
   min-height: 256px;
 }
@@ -418,9 +382,7 @@ a {
   font-weight: bold;
 
   font-size: 21px;
-  line-height: 21px;
-  color: #000000;
-  background-color: #eeeeee;
+  color: black;
 }
 
 .search {
@@ -443,7 +405,6 @@ a {
 .find_hotel-form-conainer {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
 
   width: 568px;
   min-height: 395px;
@@ -458,7 +419,7 @@ a {
   line-height: 36px;
 
   text-align: center;
-  color: #000000;
+  color: black;
   background-color: white;
 }
 
@@ -480,7 +441,7 @@ a {
   line-height: 26px;
   text-align: left;
 
-  color: #000000;
+  color: black;
   background-color: #f2f2f2;
 }
 
@@ -675,7 +636,7 @@ a {
 }
 
 .hotel_price-button:hover {
-  color: #000000;
+  color: black;
 
   background-color: white;
 }
@@ -746,8 +707,6 @@ a {
 .find_hotel-result {
   display: flex;
 
-  flex-direction: row;
-
   min-height: 86px;
   border: 1px solid black; /*Вспомогательный бордер*/
 }
@@ -776,7 +735,7 @@ a {
   font-size: 21px;
   line-height: 26px;
 
-  color: #000000;
+  color: black;
   background-color: white;
 }
 
@@ -789,7 +748,7 @@ a {
   font-size: 12px;
   line-height: 18px;
 
-  color: #000000;
+  color: black;
   background-color: white;
 }
 
@@ -807,7 +766,6 @@ a {
 /* отели*/
 .amara-resort {
   display: flex;
-  flex-direction: row;
 
   width: 1200px;
   min-height: 150px;
@@ -819,7 +777,6 @@ a {
 
 .desert-quill {
   display: flex;
-  flex-direction: row;
 
   width: 1200px;
   min-height: 150px;
@@ -831,7 +788,6 @@ a {
 
 .villas-diablo {
   display: flex;
-  flex-direction: row;
 
   width: 1200px;
   min-height: 150px;
