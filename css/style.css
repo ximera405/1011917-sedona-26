@@ -29,20 +29,33 @@ body {
   color: black;
   text-transform: uppercase;
 
-  background-color: white;
+  background-color: #f2f2f2;
 }
 
 a {
   text-decoration: none;
 }
 
+.container {
+  height: 100%;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  box-shadow: 5px 5px 25px -10px rgba(0,0,0,0.5);
+}
+
+.main-container {
+  background-color: white;
+}
 /*___________________HEADER________________*/
 
 .nav {
-  min-width: 1200px;
-  min-height: 56px;
+  width: 1200px;
+  height: 56px;
 
-  margin-left: -40px;
+  margin: 0;
+  padding: 0;
+
   font-weight: bold;
 
   font-size: 14px;
@@ -53,42 +66,38 @@ a {
 }
 
 .nav-list {
+  margin : 0;
+  padding: 0;
+
   display: flex;
 
-  align-items: flex-start;
-
-  margin-top: 0;
-  margin-right: auto;
-  margin-left: auto;
-  
-  padding: -1px;
+  width: 1200px;
   list-style: none;
+}
+
+.nav-item:nth-child(2) {
+  margin-right: 244px;
 }
 
 .nav-item {
   width: 239px;
-  min-height: 56px;
-
-  padding-top: 22px;
-  padding-bottom: 22px;
-
-  text-align: center;
-}
-
-.nav_item-img {
-  width: 244px;
-  min-height: 56px;
-
-  padding-top: 0;
-  text-align: center;
-}
-
-.nav-list {
-  list-style: none;
+  height: 56px;
 }
 
 .nav-list a {
+  display: inline-block;
+  width: 100%;
+  line-height: 56px;
+
+  text-align: center;
   color: black;
+}
+
+.nav_item-img {
+  position: absolute;
+
+  padding-top: 0;
+  padding-left: 529px;
 }
 
 .nav-list a:hover {
@@ -213,35 +222,68 @@ a {
 
 .main_greeting {
   width: 1200px;
-  min-height: 450px;
+  height: 509px;
 
-  background-image: url("../img/background-photo.jpg");
-  background-repeat: no-repeat;
-  background-position-x: 0px;
-  background-position-y: -56px;
+  background:  url("../img/background-photo.jpg") 0 -80px no-repeat;
   background-size: 1200px 773px;
+}
+
+.main_greeting::after {
+  position: absolute;
+
+  content: "";
+  width: 1200px;
+  min-height: 59px;
+
+  margin-top: -55px;
+
+  background-image: url("../img/intro-mask.svg");
+  background-repeat: no-repeat;
 }
 
 .greeting_title {
   display: block;
+  
   margin-right: auto;
   margin-left: auto;
   padding-top: 76px;
-  padding-bottom: 288px;
+  padding-bottom: 80px;
+}
+
+.welcome-mask {
+  position: absolute;
+  left: 160px;
+  bottom: 148px;
+}
+
+.welcome-mask img {
+  width: 1200px;
+  height: 59px;
 }
 
 .description {
+  display: flex;
+  flex-direction: column;
+
+  margin:0;
+  padding:0;
+
   width: 1200px;
   min-height: 216px;
 }
 
 .description_slogan {
-  width: 440px;
+  margin:0;
+  padding:0;
+
+  min-width: 440px;
   min-height: 48px;
-  margin-top: 61px;
+  padding-top: 60px;
+  padding-bottom: 38px;
   margin-right: auto;
   margin-left: auto;
 
+  font-size: 21px;
   line-height: 26px;
   text-align: center;
 }
@@ -250,9 +292,10 @@ a {
   width: 489px;
   min-height: 13px;
 
-  margin-top: 38px;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 56px;
+  margin-top: 0;
 
   font-weight: normal;
 
@@ -269,13 +312,22 @@ a {
 }
 
 .main_town-text-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   width: 400px;
-  min-height: 256px;
+  height: 146px;
 
   background-color: #81b3d2;
 }
 
 .main_town-content {
+  margin: 0;
+  padding: 0;
+  
+  padding-top: 46px;
+
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -294,6 +346,7 @@ a {
 
 .feutures {
   display: flex;
+
   width: 1200px;
   min-height: 330px;
 
@@ -370,6 +423,8 @@ a {
 .advantages-list {
   display: flex;
 
+  margin: 0;
+  padding: 0;
   list-style: none;
 }
 
@@ -706,6 +761,7 @@ a {
 
 .find_hotel-result {
   display: flex;
+  font-size: 0;
 
   min-height: 86px;
   border: 1px solid black; /*Вспомогательный бордер*/
