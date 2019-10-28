@@ -70,51 +70,57 @@
       </section>
 
       <section class="feutures">
-        <div class="feautures_house">
-          <img class="feautures_house-img" src="img/icon-1.svg" alt="" width="75" height="72">
+        <div class="feautures-container">
+          <img class="feautures-img" src="img/icon-1.svg" alt="" width="75" height="72">
           <h3 class="feutures_title">Жилье</h3>
-          <p class="feutures_text">Рекомендуем пожить в&nbsp;настоящеммотеле, всё как в&nbsp;кино!</p>
+          <p class="feutures_text">Рекомендуем пожить в&nbsp;настоящем мотеле, всё как в&nbsp;кино!</p>
         </div>
-        <div class="feautures_food">
-          <img class="feautures_food-img" src="img/icon-3.svg" alt="" width="64" height="76">
+        <div class="feautures-container">
+          <img class="feautures-img" src="img/icon-3.svg" alt="" width="74" height="70">
           <h3 class="feutures_title">Еда</h3>
-          <p class="feutures_text">Всегда заказывайте фирменный бургер,вы не&nbsp;разочаруетесь!</p>
+          <p class="feutures_text">Всегда заказывайте фирменный бургер,<br>вы не&nbsp;разочаруетесь!</p>
         </div>
-        <div class="feautures_souvenirs">
-          <img class="feautures_souvenirs-img" src="img/icon-2.svg" alt="" width="74" height="70">
+        <div class="feautures-container">
+          <img class="feautures-img" src="img/icon-2.svg" alt="" width="64" height="76">
           <h3 class="feutures_title">Сувениры</h3>
-          <p class="feutures_text">Не&nbsp;только китайского, но&nbsp;и&nbsp;местногопроизводства!</p>
-      </div>
+          <p class="feutures_text">Не&nbsp;только китайского,но&nbsp;и&nbsp;местного<br>производства!</p>
+        </div>
       </section>
 
 
       <section class="evil_bridge">
         <img class="evil_bridge-img" src="img/layer-5.png" alt="" width="800" height="256">
         <div class="evil_bridge-text-block">
-          <h3 class="evil_bridge-title">
-            Там есть мость дьявола
-          </h3>
+          <p class="evil_bridge-title">
+            Там есть<br>мость дьявола
+          </p>
           <p class="evil_bridge-number">&mdash;&#8470;&nbsp;2&mdash;</p>
-          <p class="evil_bridge-text">Да, по&nbsp;нему можно пройти! Если конечно вы осмелитесь</p>
+          <p class="evil_bridge-text">Да, по&nbsp;нему можно пройти! Если конечно<br>вы осмелитесь</p>
         </div>
       </section>
 
       <section class="advantages">
         <ul class="advantages-list">
           <li class="advantages-item">
-            <h3 class="advantages-item_title">Небольшая площадь</h3>
-            <p class="advantages-item_number">&mdash;&#8470;&nbsp;3&mdash;</p>
-            <p class="advantages-item_text">Все достопримечательности находятся очень близко</p>
+            <div class="advantages-item_container large_area-container">
+              <p class="advantages-item_title">Небольшая площадь</p>
+              <p class="advantages-item_number">&mdash;&#8470;&nbsp;3&mdash;</p>
+              <p class="advantages-item_text">Все достопримечательности находятся очень близко</p>
+            </div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-item_title">Красивая дорога</h3>
-            <p class="advantages-item_number">&mdash;&#8470;&nbsp;4&mdash;</p>
-            <p class="advantages-item_text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсемне скучно</p>
+            <div class="advantages-item_container beutiful_road-container">
+              <p class="advantages-item_title">Красивая дорога</p>
+              <p class="advantages-item_number">&mdash;&#8470;&nbsp;4&mdash;</p>
+              <p class="advantages-item_text">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем<br>не скучно</p>
+            </div>
           </li>
           <li class="advantages-item">
-            <h3 class="advantages-item_title">Мало туристов</h3>
-            <p class="advantages-item_number">&mdash;&#8470;&nbsp;5&mdash;</p>
-            <p class="advantages-item_text">Большинство едет в&nbsp;гранд каньони толпится там</p>
+            <div class="advantages-item_container few_tourists-container">
+              <p class="advantages-item_title">Мало туристов</p>
+              <p class="advantages-item_number">&mdash;&#8470;&nbsp;5&mdash;</p>
+              <p class="advantages-item_text">Большинство едет в&nbsp;гранд каньон<br>и толпится там</p>
+            </div>
           </li>
         </ul>
       </section>
@@ -126,43 +132,36 @@
             гостиниц
             в&nbsp;седоне</p>
         </div>
-        <div class="find_hotel-form-conainer">
-          <form class="find_hotel-form" method="get" action="https://echo.htmlacademy.ru">
-            <button class="find_hotel" type="button">поиск гостиницы в седоне</button>
+        <form class="find_hotel-form" method="get" action="https://echo.htmlacademy.ru">
+          <button class="find_hotel" type="button" onclick="openForm()">поиск гостиницы в седоне</button>
+          <div class="visually-hidden-form">
             <div class="date_check_in-item">
               <label for="date_check_in">
                 Дата заезда:
-                <img class="calendar_check-in" src="img/calendar.svg" alt="" width="20" height="20">
               </label>
-              <input class="date_check_in-inp" type="date" name="date_in" id="date_check_in"
-                placeholder="24 апреля 2017">
             </div>
+            <input class="date_check_in-inp" type="date" name="date_in" id="date_check_in" value="24.04.2017">
             <div class="date_check_out-item">
               <label for="date_check_out">
                 Дата выезда:
-                <img class="calendar_check-out" src="img/calendar.svg" alt="" width="20" height="20">
               </label>
-              <input class="date_check_out-inp" type="date" name="date_out" id="date_check_out"
-                placeholder="4 июля 2017">
             </div>
+            <input class="date_check_out-inp" type="date" name="date_out" id="date_check_out" value="4.07.2017">
             <div class="adault-item">
               <label for="adault">
                 Взрослые:
               </label>
-              <input class="adault_count" type="number" min="1" max="10" value="1" name="number_adault" id="adault">
             </div>
+            <input class="adault_count" type="number" min="1" max="10" value="1" name="number_adault" id="adault">
             <div class="children-item">
-              <label for="children">Дети:</label>
-              <input class="children_count" type="number" min="0" max="10" value="0" name="number_children"
-                id="children">
+              <label for="children">
+                Дети:
+              </label>
             </div>
+            <input class="children_count" type="number" min="0" max="10" value="0" name="number_children" id="children">
             <button class="search-btn" type="submit">Найти</button>
-          </form>
-        </div>
-      </section>
-
-      <section class="map">
-        <img class="map-img" src="img/map.png" alt="" width="1200" height="593">
+          </div>
+        </form>
       </section>
 
     </main>
@@ -187,7 +186,8 @@
             </a>
           </li>
         </ul>
-        <p class="footer-pic">website&nbsp;by
+        <p class="site_by">website&nbsp;by</p>
+        <div class="footer-pic">
           <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
             <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" width="115" height="41"
               viewBox="0 0 108.08 36.85">
@@ -196,7 +196,7 @@
                 fill="#231f20" />
             </svg>
           </a>
-        </p>
+        </div>
     </footer>
   </div>
 </body>
