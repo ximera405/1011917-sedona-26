@@ -11,7 +11,6 @@
 <body>
   <div class="container">
     <header class="header">
-
       <section class="header-nav">
         <nav class="nav">
           <ul class="nav-list">
@@ -23,14 +22,14 @@
             </li>
             <li class="nav_item-img">
               <a class="nav-link" href="index.html">
-                <img class="nav-icon" src="img/logo-sedona.svg" alt="Логотип сайта" height="70px" width="140px">
+                <img class="nav-icon" src="img/logo-sedona.svg" alt="Логотип сайта" height="70" width="140">
               </a>
             </li>
             <li class="nav-item">
               <a class="nav_map" href="map.html">карта штата</a>
             </li>
             <li class="nav-item">
-              <a class="nav_hotels active" href="inner.html">гостиницы</a>
+              <a class="nav_hotels active" href="#">гостиницы</a>
             </li>
           </ul>
         </nav>
@@ -43,8 +42,8 @@
       <section class="hotel-search">
 
         <form class="hotel_search-form">
+          <section class="hotel_search-section">
           <fieldset class="hotel_search-fieldset">
-            <section class="hotel_search-section">
               <legend class="infrastucture">Инфраструктура:</legend>
               <ul class="infrastucture-list">
                 <li class="swimming_pool-item">
@@ -60,11 +59,11 @@
                   <label for="wifi-box">wi-fi</label>
                 </li>
               </ul>
-            </section>
           </fieldset>
+        </section>
 
+          <section class="hotel_type-section">
           <fieldset class="hotel_type-fieldset">
-            <section class="hotel_type-section">
               <legend class="hotel_type">тип жилья:</legend>
               <ul class="hotel_type-list">
                 <li class="hotel-item">
@@ -80,8 +79,8 @@
                   <label for="apartments-box">апартаменты</label>
                 </li>
               </ul>
-            </section>
           </fieldset>
+        </section>
 
           <fieldset class="hotel_price-fieldset">
             <div class="filter-range">
@@ -99,7 +98,6 @@
               </div>
               <button class="hotel_price-button" type="submit">показать</button>
             </div>
-      </section>
       </fieldset>
       </form>
       </section>
@@ -115,7 +113,7 @@
             <path fill="#cacaca" d="M5.5 0L0 10h11z" />
           </svg>
         </button>
-        <button class="arrow_down-button" type="button">
+        <button class="arrow_down-button active-arrow" type="button">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
             <path fill="#cacaca" d="M5.5 10L0 0h11" />
           </svg>
@@ -133,7 +131,15 @@
               <button class="amara-resort_more" type="button">Подробнее</button>
               <button class="amara-resort_reserve" type="button">Забронировать</button>
             </div>
+            <div class="stars_rate">
+              <ul class="ar_stars_rate-list">
+                <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+              </ul>
             <p class="amara-resort_rate">Рейтинг: 8.5</p>
+          </div>
           </li>
 
           <li class="desert-quill">
@@ -145,7 +151,14 @@
               <button class="desert-quill_more" type="button">Подробнее</button>
               <button class="desert-quill_reserve" type="button">Забронировать</button>
             </div>
+            <div class="stars_rate">
+                <ul class="dq_stars_rate-list">
+                  <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                  <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                </ul>
             <p class="desert-quill_rate">Рейтинг: 8.9</p>
+            </div>
           </li>
 
           <li class="villas-diablo">
@@ -157,7 +170,13 @@
               <button class="villas-diablo_more" type="button">Подробнее</button>
               <button class="villas-diablo_reserve" type="button">Забронировать</button>
             </div>
+            <div class="stars_rate">
+              <ul class="vd_stars_rate-list">
+                <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+                <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17" viewBox="0 0 18 17"><path fill="#81B3D2" d="M9.002 0l2.126 6.494h6.877l-5.564 4.012L14.566 17l-5.564-4.013L3.438 17l2.126-6.494L0 6.494h6.878z"/></svg></li>
+              </ul>
             <p class="villas-diablo_rate">Рейтинг: 9.2</p>
+            </div>
           </li>
         </ul>
       </section>

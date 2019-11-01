@@ -21,7 +21,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-weight: 700;
+  font-weight: normal;
   font-size: 14px;
   line-height: 24px;
 
@@ -57,7 +57,6 @@ a {
 
   font-weight: bold;
 
-  font-size: 14px;
   line-height: 26px;
 
   color: black;
@@ -219,8 +218,6 @@ a {
   margin-right: 4px;
   padding-bottom: 36px;
 
-  font-weight: normal;
-  font-size: 14px;
   line-height: 26px;
 
   vertical-align: middle;
@@ -290,6 +287,7 @@ a {
   padding-top: 60px;
   padding-bottom: 38px;
 
+  font-weight: bold;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -304,7 +302,6 @@ a {
   margin-bottom: 56px;
   margin-left: auto;
 
-  font-weight: normal;
 
   line-height: 26px;
   color: #333333;
@@ -313,8 +310,11 @@ a {
 .main_town {
   display: flex;
 
-  min-height: 256px;
-  background-color: #81b3d2;
+  height: 256px;
+}
+
+.main_town-img {
+  display: inline-block;
 }
 
 .main_town-text-block {
@@ -325,17 +325,19 @@ a {
   width: 400px;
   min-height: 146px;
 
-  margin-bottom: 54px;
+  padding-bottom: 54px;
 
   background-color: #81b3d2;
+  color: white;
 }
 
-.main_town-content {
+.main_town-title {
   margin: 0;
   padding: 0;
   
   padding-top: 46px;
 
+  font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -344,12 +346,8 @@ a {
 
 .main_town-number,
 .main_town-text {
-  font-weight: normal;
-
   line-height: 21px;
   text-align: center;
-
-  color: white;
 }
 
 .feutures {
@@ -357,9 +355,6 @@ a {
   justify-content: space-around;
 
   min-height: 330px;
-
-  font-weight: normal;
-  font-size: 14px;
 
   line-height: 21px;
   text-align: center;
@@ -397,9 +392,11 @@ a {
 .evil_bridge {
   display: flex;
 
-  min-height: 256px;
-  color: white;
-  background-color: #81b3d2;
+  height: 256px;
+}
+
+.evil_bridge-img {
+  display: inline-block;
 }
 
 .evil_bridge-text-block{
@@ -410,15 +407,19 @@ a {
   width: 400px;
   min-height: 146px;
 
-  margin-bottom: 54px;
+  padding-bottom: 54px;
+
+  background-color: #81b3d2;
+  color: white;
 }
 
 .evil_bridge-title {
   margin: 0;
   padding: 0;
-
+  
   padding-top: 46px;
 
+  font-weight: bold;
   font-size: 21px;
   line-height: 21px;
   text-align: center;
@@ -426,17 +427,12 @@ a {
 
 .evil_bridge-number,
 .evil_bridge-text {
-  font-weight: normal;
-
-  font-size: 14px;
   line-height: 21px;
   text-align: center;
 }
 
 .advantages {
   min-height: 256px;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
   text-align: center;
 
@@ -523,15 +519,42 @@ a {
 }
 
 .search_text-container {
-  display: block;
 
   width: 434px;
   min-height: 96px;
 
-  margin-top: 57px;
-  margin-right: auto;
   margin-bottom: 52px;
+}
+
+.search_ask {
+  display: block;
+
+  margin-top: 50px;
+  margin-right: auto;
   margin-left: auto;
+
+  font-weight: bold;
+  font-size: 30px;
+  line-height: 36px;
+
+  text-align: center;
+  color: black;
+  background-color: white;
+}
+
+.search_ask-description {
+  display: block;
+
+  width: 450px;
+
+  margin-right: auto;
+  margin-left: auto;
+  margin-bottom: 46px;
+
+  line-height: 24px;
+  text-align: center;
+  color: #333333;
+  background-color: white;
 }
 
 .visually-hidden-form {
@@ -550,26 +573,6 @@ a {
   background-color: white;
 
   box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
-}
-
-.search_ask {
-  font-weight: bold;
-  font-size: 30px;
-  line-height: 36px;
-
-  text-align: center;
-  color: black;
-  background-color: white;
-}
-
-.search_ask-description {
-  font-weight: normal;
-  font-size: 14px;
-
-  line-height: 24px;
-  text-align: center;
-  color: #333333;
-  background-color: white;
 }
 
 .find_hotel {
@@ -604,24 +607,28 @@ a {
   display: inline-block;
 
   margin-left: 55px;
+  font-weight: bold;
 }
 
 .date_check_in-inp,
 .date_check_out-inp {
   display: inline-block;
+  box-sizing: border-box;
 
   width: 346px;
   min-height: 38px;
 
   font: inherit;
   font-weight: bold;
-  font-size: 14px;
   line-height: 26px;
   text-align: left;
+
+  padding-left: 13px;
 
   color: black;
   background-color: #f2f2f2;
   border: none;
+  outline: none;
 }
 
 .date_check_in-inp {
@@ -647,12 +654,60 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+.date_check_in-inp::placeholder,
+.date_check_out-inp::placeholder {
+  color: black;
+}
+
+.check_in-calendar {
+  width: 21px;
+  height: 22px;
+
+  position: absolute;
+  right: 64px;
+  top: 63px;
+
+  border: none;
+  outline: none;
+
+  background-color: none;
+  fill: #cacaca;
+}
+
+.check_out-calendar {
+  width: 21px;
+  height: 22px;
+
+  position: absolute;
+  right: 64px;
+  top: 130px;
+
+  border: none;
+  outline: none;
+
+  fill: #cacaca;
+}
+
+.check_in-calendar:hover,
+.check_in-calendar:focus,
+.check_out-calendar:hover,
+.check_out-calendar:focus {
+  fill : black;
+}
+
+.check_in-calendar:active,
+.check_out-calendar:active {
+  fill : #81b3d2;
+}
+
 .adault-item,
 .children-item {
   display: inline-block;
   margin-left: 55px;
 
   padding: 0;
+
+  font-weight: bold;
 }
 
 .adault-item {
@@ -672,10 +727,31 @@ a {
   padding: 0;
 
   text-align: center;
+  font-weight: bold;
 
   background-color: #f2f2f2;
 
   border: none;
+  outline: none;
+
+  box-sizing: border-box;
+}
+
+.adault_count:hover,
+.children_count:hover {
+  background-color: #ebebeb;
+}
+
+.adault_count:focus,
+.children_count:focus {
+  background-color: white;
+
+  border: 2px solid #e5e5e5;
+}
+
+.adault_count::placeholder,
+.children_count::placeholder {
+  color: black;
 }
 
 .adault_count {
@@ -684,6 +760,58 @@ a {
 
 .children_count {
   margin-left: 24px;
+}
+
+.plus_minus-container {
+  position: absolute;
+
+  top: 190px;
+
+  display: block;
+
+  width: 38px;
+  height: 38px;
+
+  background-color: none;
+}
+
+.adailt_minus {
+  left: 167px;
+}
+
+.adault_plus {
+  left: 243px;
+}
+
+.children_minus {
+  right: 131px;
+}
+
+.children_plus {
+  right: 55px;
+}
+
+.minus-svg {
+  position: absolute;
+
+  left: 13px;
+  top: 18px;
+}
+
+.plus-svg {
+  position: absolute;
+
+  left: 13px;
+  top: 14px;
+}
+
+.activity:hover line,
+.activity:focus line {
+  stroke: black;
+}
+
+.activity:active line {
+  stroke: #81b3d2;
 }
 
 .search-btn {
@@ -771,9 +899,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 
   color: white;
@@ -804,28 +929,15 @@ a {
   padding: 0;
   list-style: none;
 
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 21px;
-
-  color: white;
-}
-
-.hotel_price {
-  font-weight: bold;
-  font-size: 16px;
   line-height: 21px;
 
   color: white;
 }
 
 .hotel_price-button {
-
   width: 133px;
   min-height: 32px;
   margin-left: 100px;
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 
   color: white;
@@ -1021,7 +1133,6 @@ a {
   margin: 0 auto;
   padding: 6px 35px;
 
-  font-size: 14px;
   line-height: 20px;
   color: #ffffff;
   text-transform: uppercase;
@@ -1045,7 +1156,7 @@ a {
   font-size: 0;
   background-color: white;
 
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .results-text {
@@ -1066,7 +1177,6 @@ a {
   margin-bottom: 37px;
 
   margin-left: 49px;
-  font-weight: normal;
   font-size: 12px;
   line-height: 18px;
 
@@ -1084,7 +1194,6 @@ a {
 
   padding: 0;
 
-  font-weight: normal;
   font-size: 12px;
   line-height: 18px;
 
@@ -1162,15 +1271,19 @@ a {
   outline: none;
 }
 
-.arrow_up-button:hover svg path,
-.arrow_up-button:focus svg path,
-.arrow_down-button:hover svg path,
-.arrow_down-button:focus svg path {
+.arrow_up-button:hover path,
+.arrow_up-button:focus path,
+.arrow_down-button:hover path,
+.arrow_down-button:focus path {
   fill: black;
 }
 
 .arrow_up-button:active svg path,
 .arrow_down-button:active svg path {
+  fill: #81b3d2;
+}
+
+.active-arrow path {
   fill: #81b3d2;
 }
 
@@ -1190,7 +1303,7 @@ a {
 
   margin: 0;
 
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .amara-resort-container {
@@ -1205,7 +1318,7 @@ a {
 
   margin: 0;
 
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .desert-quill-container {
@@ -1220,7 +1333,7 @@ a {
 
   margin: 0;
 
-  border-bottom: 2px solid #f2f2f2;
+  border-bottom: 1px solid #e5e5e5;
 }
 
 .villas-diablo-container {
@@ -1284,8 +1397,6 @@ a {
 
   margin: 0;
 
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 
   color: #333333;
@@ -1302,27 +1413,70 @@ a {
 
   margin-left: 21px;
 
-  font-weight: normal;
-  font-size: 14px;
   line-height: 21px;
 
   color: #333333;
   background-color: white;
 }
 
+.stars_rate {
+  display: flex;
+  flex-direction: column;
+
+  width: 110px;
+  height: 18px;
+
+  margin-left: 530px;
+  margin-top: 25px;
+  margin-bottom: 47px;
+}
+
+.ar_stars_rate-list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  padding-left: 20px;
+}
+
+.dq_stars_rate-list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  padding-left: 45px;
+}
+
+.vd_stars_rate-list {
+  display: flex;
+  justify-content: space-between;
+
+  list-style: none;
+
+  padding-left: 69px;
+}
+
+.stars_list-item {
+  width: 17px;
+  height: 17px;
+
+  margin-left: 8px;
+}
+
+.stars_list-item svg {
+  margin-right: 8px;
+}
+
 .amara-resort_rate,
 .desert-quill_rate,
 .villas-diablo_rate {
-  display: inline-block;
-
   width: 110px;
   height: 27px;
-  margin-top: 86px;
 
-  margin-left: 522px;
-  font-weight: normal;
+  margin-top: 47px;
 
-  font-size: 14px;
   line-height: 21px;
   text-align: center;
 
@@ -1333,12 +1487,10 @@ a {
 .amara-resort_more,
 .villas-diablo_more,
 .desert-quill_more {
-
   width: 110px;
   min-height: 27px;
   margin-right: 1px;
   font-weight: bold;
-  font-size: 14px;
   line-height: 21px;
 
   color: white;
@@ -1367,7 +1519,6 @@ a {
   width: 142px;
   min-height: 27px;
   font-weight: bold;
-  font-size: 14px;
   line-height: 21px;
 
   color: white;
