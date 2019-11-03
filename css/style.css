@@ -156,15 +156,17 @@ a {
 }
 
 .footer_tag {
-  align-self: center;
+      align-self: center;
 
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+  -ms-grid-row-align: center;
 }
 
 .socials {
-  align-self: center;
+      align-self: center;
+  -ms-grid-row-align: center;
 }
 
 .socials_list {
@@ -230,8 +232,10 @@ a {
 
 .htmlacademy-logo {
 
-  align-self: center;
+      align-self: center;
   margin-left: 8px;
+
+  -ms-grid-row-align: center;
 }
 
 .website-by-text {
@@ -256,8 +260,8 @@ a {
   min-height: 509px;
 
   background:  url("../img/background-photo.jpg") 0 -75px no-repeat;
-  background-size: 1200px 773px;
   background-color: #687d8c;
+  background-size: 1200px 773px;
 }
 
 .main_greeting::after {
@@ -343,6 +347,8 @@ a {
 
 .main_town-img {
   display: inline-block;
+
+  background-color: #9e785c;
 }
 
 .main_town-title {
@@ -416,8 +422,6 @@ a {
 
   margin-bottom: 8px;
   margin-left: auto;
-
-  background-color: #9e785c;
 }
 
 .evil_bridge {
@@ -533,10 +537,10 @@ a {
 
   margin: 0;
   padding: 0;
+  background-color: #e0edbb;
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
-  background-color: #e0edbb;
 }
 
 .find_hotel-form-container {
@@ -678,6 +682,11 @@ a {
   border: 2px solid #e5e5e5;
 }
 
+.date_check_in-inp:-ms-input-placeholder,
+.date_check_out-inp:-ms-input-placeholder {
+  color: black;
+}
+
 .date_check_in-inp::placeholder,
 .date_check_out-inp::placeholder {
   color: black;
@@ -771,6 +780,11 @@ a {
   background-color: white;
 
   border: 2px solid #e5e5e5;
+}
+
+.adault_count:-ms-input-placeholder,
+.children_count:-ms-input-placeholder {
+  color: black;
 }
 
 .adault_count::placeholder,
@@ -1049,8 +1063,8 @@ a {
 }
 
 .filter-range-title {
-  padding-left: 3px;
   margin-bottom: 9px;
+  padding-left: 3px;
 
   font-weight: 600;
   font-size: 16px;
@@ -1221,9 +1235,9 @@ a {
 .sorting_per-type {
   width: 49px;
   height: 17px;
-  margin-left: 32px;
 
   margin-top: 36px;
+  margin-left: 32px;
 
   border-bottom: 1px dashed #81b3d2;
 }
@@ -1231,9 +1245,9 @@ a {
 .sorting_per-rate {
   width: 76px;
   height: 17px;
-  margin-left: 33px;
 
   margin-top: 36px;
+  margin-left: 33px;
 
   border-bottom: 1px dashed #81b3d2;
 }
