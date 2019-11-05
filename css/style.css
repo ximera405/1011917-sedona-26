@@ -1017,12 +1017,12 @@ a {
 .hotel_search-fieldset {
   width: 139px;
   margin-top: 27px;
-  margin-left: 72px;
+  margin-left: 61px;
 }
 
 .hotel_type-fieldset {
   margin-top: 27px;
-  margin-left: 98px;
+  margin-left: 95px;
 }
 
 .infrastucture {
@@ -1030,7 +1030,7 @@ a {
 
   margin-bottom: 18px;
 
-  margin-left: -11px;
+  margin-left: 0;
 
   font-weight: bold;
   font-size: 16px;
@@ -1063,7 +1063,7 @@ a {
 
   margin-bottom: 18px;
 
-  margin-left: -15px;
+  margin-left: 0;
 
   font-weight: bold;
   font-size: 16px;
@@ -1128,71 +1128,56 @@ a {
   position: relative;
   display: inline-block;
 
-  padding-left: 28px;
+  padding-left: 40px;
   line-height: 20px;
   vertical-align: middle;
   cursor: pointer;
 }
 
 .infrastucture-list input[type="checkbox"]:checked+label:before,
+.hotel_type-list input[type="checkbox"]:checked+label:before {
+  content: "";
+  position: absolute;
+
+  display: inline-block;
+
+  left: 0;
+
+  width: 40px;
+  height: 23px;
+
+  background: url(../img/checkbox-on.svg) no-repeat;
+}
+
 .infrastucture-list input[type="checkbox"]:not(:checked)+label:before,
-.hotel_type-list input[type="checkbox"]:checked+label:before,
 .hotel_type-list input[type="checkbox"]:not(:checked)+label:before {
   content: "";
   position: absolute;
-  top: 0px;
-  left: -13px;
-  width: 20px;
-  min-height: 20px;
-  background-color: inherit;
-  border: 1.5px solid white;
 
-  border-radius: 2px;
+  display: inline-block;
+
+  left: 0;
+
+  width: 40px;
+  height: 23px;
+
+  background: url(../img/checkbox-off.svg) no-repeat;
 }
 
-.infrastucture-list input[type="checkbox"]:checked+label:after,
-.infrastucture-list input[type="checkbox"]:not(:checked)+label:after,
-.hotel_type-list input[type="checkbox"]:checked+label:after,
-.hotel_type-list input[type="checkbox"]:not(:checked)+label:after {
-  content: "";
-  position: absolute;
-  top: 2px;
-  left: -8px;
-  width: 18px;
-  min-height: 7px;
-  border-bottom: 4px solid white;
-  border-left: 4px solid white;
-  border-radius: 1px;
-  transform: rotate(-45deg);
-
-  z-index: 50;
+.hotel_type-list input[type="checkbox"]:focus+label,
+.infrastucture-list input[type="checkbox"]:focus+label {
+  outline: 1px solid #abadb3;
 }
 
-.infrastucture-list input[type="checkbox"]:not(:checked)+label:after,
-.hotel_type-list input[type="checkbox"]:not(:checked)+label:after {
-  display: none;
-}
-
-.infrastucture-list input[type="checkbox"]:checked+label:after,
-.hotel_type-list input[type="checkbox"]:checked+label:after {
-  opacity: 1;
-}
-
-.infrastucture-list input[type="checkbox"]:disabled+label:before,
-.infrastucture-list input[type="checkbox"]:disabled+label:after,
-.infrastucture-list input[type="checkbox"]:disabled {
-  opacity: 0.3
-}
-
-.hotel_type-list input[type="checkbox"]:focus+label:before,
-.infrastucture-list input[type="checkbox"]:focus+label:before {
-  outline: 1px solid blue;
+.hotel_type-list input[type="checkbox"]:disabled+label:before,
+.infrastucture-list input[type="checkbox"]:disabled+label:before {
+  opacity: 0.3;
 }
 
 .filter-range {
   width: 320px;
   margin-top: 22px;
-  margin-left: 320px;
+  margin-left: 322px;
 
   color: #ffffff;
   text-transform: uppercase;
