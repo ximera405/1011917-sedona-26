@@ -25,7 +25,7 @@ body {
   font-size: 14px;
   line-height: 24px;
 
-  font-family: 'PT Sans';
+  font-family: 'PT Sans', Arial, sans-serif;
   color: black;
   text-transform: uppercase;
 
@@ -79,8 +79,9 @@ a {
 }
 
 .nav-item {
+  box-sizing: border-box;
 
-  width: 240px;
+  min-width: 240px;
   min-height: 56px;
   margin: 0;
   padding: 0;
@@ -88,30 +89,47 @@ a {
 
 .nav-list a {
   display: inline-block;
+  box-sizing: border-box;
 
-  width: 100%;
-  line-height: 56px;
+  line-height: 26px;
   vertical-align: middle;
-
-  text-align: center;
   color: black;
 }
 
-.nav_hotels {
-  padding-left: 9px;
-}
+.nav_inform {
+  text-align: left;
 
+  margin: 15px 74px 16px 72px;
+}
 .nav_photo_video {
-  padding-left: 3px;
+  text-align: left;
+
+  margin: 15px 68px 16px 73px;
 }
 
-.nav_item-img {
+.nav_map {
+  text-align: right;
+
+  margin: 15px 73px 16px 76px;
+}
+
+.nav_hotels {
+  text-align: right;
+
+  margin: 15px 72px 16px 88px;
+}
+
+.nav-icon {
   position: absolute;
 
-  top : 0;
-  right: 45%;
-  
-  left: 45%;
+  display: inline-block;
+
+  margin-left: auto;
+  margin-right: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
 }
 
 .nav-list a:hover {
@@ -134,6 +152,8 @@ a {
 
 .footer {
   position: relative;
+
+  margin-top: 0;
   display: block;
 
   box-sizing: border-box;
@@ -261,7 +281,7 @@ a {
 .main_greeting {
   min-height: 509px;
 
-  background:  url("../img/background-photo.jpg") 0 -75px no-repeat;
+  background: url("../img/background-photo.jpg") 0 -75px no-repeat;
   background-color: #687d8c;
   background-size: 1200px 773px;
 }
@@ -298,16 +318,16 @@ a {
 }
 
 .description_slogan {
-  min-width: 440px;
+  width: 450px;
   min-height: 48px;
   margin:0;
   margin-right: auto;
   margin-left: auto;
 
   padding-top: 60px;
-  padding-bottom: 28px;
+  padding-bottom: 26px;
 
-  font-weight: bold;
+  font-weight: 700;
   font-size: 21px;
   line-height: 26px;
   text-align: center;
@@ -318,8 +338,8 @@ a {
 
   width: 500px;
   min-height: 13px;
-  margin-top: 7px;
 
+  margin-top: 0;
   margin-right: auto;
   margin-left: auto;
   font-weight: normal;
@@ -355,6 +375,9 @@ a {
 }
 
 .main_town-title {
+  width: 140px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 48px;
 
   font-weight: bold;
@@ -364,6 +387,9 @@ a {
 }
 
 .main_town-text {
+  width: 280px;
+
+  margin-left: 60px;
   margin-top: 20px;
 
   line-height: 21px;
@@ -383,7 +409,20 @@ a {
   background-color: white;
 }
 
-.feautures-container {
+.feautures-container-home {
+  display: flex;
+  flex-direction: column;
+
+  width: 292px;
+  min-height: 185px;
+
+  padding-top: 58px;
+  padding-bottom: 40px;
+
+  text-align: center;
+}
+
+.feautures-container-food {
   display: flex;
   flex-direction: column;
 
@@ -391,6 +430,19 @@ a {
   min-height: 185px;
 
   padding-top: 60px;
+  padding-bottom: 40px;
+
+  text-align: center;
+}
+
+.feautures-container-souvenires {
+  display: flex;
+  flex-direction: column;
+
+  width: 292px;
+  min-height: 185px;
+
+  padding-top: 55px;
   padding-bottom: 40px;
 
   text-align: center;
@@ -415,7 +467,26 @@ a {
   font-size: 21px;
 
   line-height: 21px;
-  color: black;
+}
+
+.feutures_title-souvenires {
+  margin-bottom: 10px;
+
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 21px;
+
+  line-height: 21px;
+}
+
+.feutures_title-home {
+  margin-bottom: 6px;
+
+  padding-bottom: 0;
+  font-weight: bold;
+  font-size: 21px;
+
+  line-height: 21px;
 }
 
 .feautures-img {
@@ -449,6 +520,10 @@ a {
 }
 
 .evil_bridge-title {
+  width: 150px;
+  margin-left: auto;
+  margin-right: auto;
+
   margin-top: 48px;
 
   font-weight: bold;
@@ -458,6 +533,9 @@ a {
 }
 
 .evil_bridge-text {
+  width: 305px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 20px;
 
   line-height: 21px;
@@ -489,17 +567,36 @@ a {
 }
 
 .advantages-item_title {
+  width: 150px;
 
+  margin-left: auto;
+  margin-right: auto;
   padding-top: 2px;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
   font-weight: bold;
 
   font-size: 21px;
   color: black;
 }
 
-.advantages-item_text {
+.advantages-item_text-square {
+  padding-top: 5px;
+}
+
+.advantages-item_text-road {
+  width: 260px;
+
+  margin-left: auto;
+  margin-right: auto;
+
   padding-top: 6px;
+}
+
+.advantages-item_text-tourists {
+  width: 250px;
+
+  padding-left: 0;
+  padding-top: 5px;
 }
 
 .advantages-item_container {
@@ -666,6 +763,10 @@ a {
   outline: none;
 }
 
+.date_check_in-item {
+  margin-top: 55px;
+}
+
 .date_check_in-inp {
   margin-top: 55px;
   margin-left: 21px;
@@ -686,6 +787,7 @@ a {
 .date_check_out-inp:focus {
   background-color: white;
 
+  padding-left: 11px;
   border: 2px solid #e5e5e5;
 }
 
@@ -912,21 +1014,21 @@ a {
   background: #657a8a url("../img/filter-background.jpg") no-repeat 0 -300px;
 }
 
-.hotel_search-section {
+.hotel_search-fieldset {
   width: 139px;
   margin-top: 27px;
   margin-left: 72px;
 }
 
-.hotel_type-section {
+.hotel_type-fieldset {
   margin-top: 27px;
-  margin-left: 118px;
+  margin-left: 98px;
 }
 
 .infrastucture {
   display: inline-block;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   margin-left: -11px;
 
@@ -953,13 +1055,13 @@ a {
 }
 
 .infrastucture-item {
-  margin-bottom: 24px;
+  margin-bottom: 25px;
 }
 
 .hotel_type {
   display: inline-block;
 
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   margin-left: -15px;
 
@@ -1062,16 +1164,29 @@ a {
   border-left: 4px solid white;
   border-radius: 1px;
   transform: rotate(-45deg);
+
+  z-index: 50;
 }
 
 .infrastucture-list input[type="checkbox"]:not(:checked)+label:after,
 .hotel_type-list input[type="checkbox"]:not(:checked)+label:after {
-  opacity: 0;
+  display: none;
 }
 
 .infrastucture-list input[type="checkbox"]:checked+label:after,
 .hotel_type-list input[type="checkbox"]:checked+label:after {
   opacity: 1;
+}
+
+.infrastucture-list input[type="checkbox"]:disabled+label:before,
+.infrastucture-list input[type="checkbox"]:disabled+label:after,
+.infrastucture-list input[type="checkbox"]:disabled {
+  opacity: 0.3
+}
+
+.hotel_type-list input[type="checkbox"]:focus+label:before,
+.infrastucture-list input[type="checkbox"]:focus+label:before {
+  outline: 1px solid blue;
 }
 
 .filter-range {
@@ -1179,7 +1294,7 @@ a {
 }
 
 .range-toggle:hover {
-  background: #1c4f80;
+  border: 10px solid #ffffff;
 }
 
 .range-toggle-min {
@@ -1193,7 +1308,7 @@ a {
 .find_hotel-result {
   display: flex;
 
-  min-height: 80px;
+  height: 85px;
   font-size: 0;
   background-color: white;
 
@@ -1202,7 +1317,6 @@ a {
 
 .results-text {
   margin-top: 30px;
-  margin-bottom: 28px;
   margin-left: 72px;
 
   font-weight: bold;
@@ -1215,8 +1329,6 @@ a {
 
 .sorting-text {
   margin-top: 36px;
-  margin-bottom: 28px;
-
   margin-left: 48px;
   font-size: 12px;
   line-height: 18px;
@@ -1230,9 +1342,6 @@ a {
 .sorting_per-rate {
   display: inline-block;
 
-  margin-top: 31px;
-  margin-bottom: 28px;
-
   padding: 0;
 
   font-size: 12px;
@@ -1243,13 +1352,15 @@ a {
   text-transform: uppercase;
 
   background-color: white;
-  border: none;
   outline: none;
 }
 
 .sorting_per-price {
   width: 50px;
+  height: 17px;
   min-height: 10px;
+
+  margin-top: 36px;
   margin-left: 39px;
 
   color: #81b3d2;
@@ -1304,15 +1415,15 @@ a {
 }
 
 .arrow_up-button {
-  margin-top: 39px;
+  margin-top: 37px;
   margin-bottom: 36px;
-  margin-left: 501px;
+  margin-left: 503px;
 
   outline: none;
 }
 
 .arrow_down-button {
-  margin-top: 38px;
+  margin-top: 36px;
   margin-bottom: 37px;
   margin-left: 8px;
 
@@ -1409,10 +1520,10 @@ a {
   display: block;
 
   width: 230px;
-  height: 16px;
+  min-height: 16px;
 
   margin-top: 25px;
-  margin-bottom: 3px;
+  margin-bottom: 7px;
 
   padding: 0;
 
@@ -1455,7 +1566,7 @@ a {
   margin: 0;
 
   line-height: 21px;
-  vertical-align: middle;
+  vertical-align: top;
 
   color: #333333;
   background-color: white;
@@ -1466,13 +1577,15 @@ a {
 .villas-diablo_price {
   display: inline-block;
 
-  min-height: 12px;
-  margin-bottom: 14px;
+  width: 66px;
+  min-height: 10px;
 
+  margin-top: 0;
+  margin-bottom: 14px;
   margin-left: 17px;
 
   line-height: 21px;
-  vertical-align: middle;
+  vertical-align: top;
 
   color: #333333;
   background-color: white;
@@ -1545,8 +1658,16 @@ a {
 .amara-resort_more,
 .villas-diablo_more,
 .desert-quill_more {
-  width: 110px;
-  min-height: 27px;
+  display: inline-block;
+  vertical-align: middle;
+
+  text-align: center;
+
+  box-sizing: border-box;
+  padding-top: 3px;
+
+  min-width: 110px;
+  min-height: 25px;
   margin-right: 2px;
   font-weight: bold;
   line-height: 21px;
@@ -1574,8 +1695,15 @@ a {
 .amara-resort_reserve,
 .desert-quill_reserve,
 .villas-diablo_reserve {
-  width: 142px;
-  min-height: 27px;
+  display: inline-block;
+  vertical-align: middle;
+
+  text-align: center;
+  box-sizing: border-box;
+  padding-top: 3px;
+
+  min-width: 142px;
+  min-height: 25px;
   font-weight: bold;
   line-height: 21px;
 

@@ -14,23 +14,21 @@
       <nav class="nav">
         <ul class="nav-list">
           <li class="nav-item">
-            <a class="nav_inform" href="index.html">информация</a>
+            <a class="nav_inform" href="#">информация</a>
           </li>
           <li class="nav-item">
-            <a class="nav_photo_video" href="photovideo.html">фото и&nbsp;видео</a>
-          </li>
-          <li class="nav_item-img">
-            <a class="nav-link" href="index.html">
-              <img class="nav-icon" src="img/logo-sedona.svg" alt="city-Sedona" height="70" width="140">
-            </a>
+            <a class="nav_photo_video" href="#">фото и&nbsp;видео</a>
           </li>
           <li class="nav-item">
-            <a class="nav_map" href="map.html">карта штата</a>
+            <a class="nav_map" href="#">карта штата</a>
           </li>
           <li class="nav-item">
             <a class="nav_hotels active" href="inner.html">гостиницы</a>
           </li>
         </ul>
+        <a class="nav-link" href="index.html">
+          <img class="nav-icon" src="img/logo-sedona.svg" alt="city-Sedona" height="70" width="140">
+        </a>
       </nav>
 
     </header>
@@ -40,7 +38,6 @@
       <section class="hotel-search">
 
         <form class="hotel_search-form">
-          <section class="hotel_search-section">
             <fieldset class="hotel_search-fieldset">
               <legend class="infrastucture">Инфраструктура:</legend>
               <ul class="infrastucture-list">
@@ -58,9 +55,7 @@
                 </li>
               </ul>
             </fieldset>
-          </section>
 
-          <section class="hotel_type-section">
             <fieldset class="hotel_type-fieldset">
               <legend class="hotel_type">тип жилья:</legend>
               <ul class="hotel_type-list">
@@ -78,7 +73,6 @@
                 </li>
               </ul>
             </fieldset>
-          </section>
 
           <fieldset class="hotel_price-fieldset">
             <div class="filter-range">
@@ -103,35 +97,34 @@
       <section class="find_hotel-result">
         <h2 class="results-text">найдено: 3</h2>
         <p class="sorting-text">сортировка:</p>
-        <button class="sorting_per-price" type="button">по цене</button>
-        <button class="sorting_per-type" type="button">по типу</button>
-        <button class="sorting_per-rate" type="button">по рейтингу</button>
-        <button class="arrow_up-button" type="button">
+        <a class="sorting_per-price" href="#">по цене</a>
+        <a class="sorting_per-type" href="#">по типу</a>
+        <a class="sorting_per-rate" href="#">по рейтингу</a>
+        <a class="arrow_up-button" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
             <path fill="#cacaca" d="M5.5 0L0 10h11z" />
           </svg>
-        </button>
-        <button class="arrow_down-button active-arrow" type="button">
+        </a>
+        <a class="arrow_down-button active-arrow" href="#">
           <svg xmlns="http://www.w3.org/2000/svg" width="11" height="10">
             <path fill="#cacaca" d="M5.5 10L0 0h11" />
           </svg>
-        </button>
+        </a>
       </section>
 
       <section class="hotels_search">
         <ul class="hotels_list">
           <li class="amara-resort">
-            <img class="amara-resort_img" src="img/amara-resort&spa.jpg" alt="Amara Resort & Spa" width="135"
-              height="90">
+            <img class="amara-resort_img" src="img/amara-resort&spa.jpg" alt="Amara Resort & Spa" width="135" height="90">
             <div class="amara-resort-container">
-              <button class="amara-resort_name" type="button">Amara Resort &amp;&nbsp;Spa</button>
+              <a class="amara-resort_name" href="#">Amara Resort &amp;&nbsp;Spa</a>
               <p class="amara-resort_type">Гостиница</p>
               <p class="amara-resort_price">От&nbsp;4000&nbsp;Р.</p>
-              <button class="amara-resort_more" type="button">Подробнее</button>
-              <button class="amara-resort_reserve" type="button">Забронировать</button>
+              <a class="amara-resort_more" href="#">Подробнее</a>
+              <a class="amara-resort_reserve" href="#">Забронировать</a>
             </div>
             <div class="stars_rate">
-              <ul class="ar_stars_rate-list">
+              <ul class="ar_stars_rate-list" title="Amara Resort has 4 stars-rate">
                 <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
                     viewBox="0 0 18 17">
                     <path fill="#81B3D2"
@@ -160,14 +153,14 @@
           <li class="desert-quill">
             <img class="desert-quill_img" src="img/desert-quill-inc.jpg" alt="Desert Quail" width="135" height="90">
             <div class="desert-quill-container">
-              <button class="desert-quill_name" type="button">Desert Quail Inn</button>
+              <a class="desert-quill_name" href="#">Desert Quail Inn</a>
               <p class="desert-quill_type">Мотель</p>
               <p class="desert-quill_price">От&nbsp;3000&nbsp;Р.</p>
-              <button class="desert-quill_more" type="button">Подробнее</button>
-              <button class="desert-quill_reserve" type="button">Забронировать</button>
+              <a class="desert-quill_more" href="#">Подробнее</a>
+              <a class="desert-quill_reserve" href="#">Забронировать</a>
             </div>
             <div class="stars_rate">
-              <ul class="dq_stars_rate-list">
+              <ul class="dq_stars_rate-list" title="desert quill has 3 stars-rate">
                 <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
                     viewBox="0 0 18 17">
                     <path fill="#81B3D2"
@@ -189,17 +182,16 @@
           </li>
 
           <li class="villas-diablo">
-            <img class="villas-diablo_img" src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135"
-              height="90">
+            <img class="villas-diablo_img" src="img/villas-at-poco-diablo.jpg" alt="Villas at Poco Diablo" width="135" height="90">
             <div class="villas-diablo-container">
-              <button class="villas-diablo_name" type="button">Villas at&nbsp;Poco Diablo</button>
+              <a class="villas-diablo_name" href="#">Villas at&nbsp;Poco Diablo</a>
               <p class="villas-diablo_type">Апартаменты</p>
               <p class="villas-diablo_price">От&nbsp;2000&nbsp;Р.</p>
-              <button class="villas-diablo_more" type="button">Подробнее</button>
-              <button class="villas-diablo_reserve" type="button">Забронировать</button>
+              <a class="villas-diablo_more" href="#">Подробнее</a>
+              <a class="villas-diablo_reserve" href="#">Забронировать</a>
             </div>
             <div class="stars_rate">
-              <ul class="vd_stars_rate-list">
+              <ul class="vd_stars_rate-list" title="Villas at Poco Diablo has 2 start-rate">
                 <li class="stars_rate-item"><svg xmlns="http://www.w3.org/2000/svg" width="18" height="17"
                     viewBox="0 0 18 17">
                     <path fill="#81B3D2"
