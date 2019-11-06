@@ -20,7 +20,7 @@
             <a class="nav_photo_video" href="#">фото и&nbsp;видео</a>
           </li>
           <li class="nav-item">
-            <a class="nav_map" href="#">карта штата</a>
+            <a class="nav_map" href="#sedona-map">карта штата</a>
           </li>
           <li class="nav-item">
             <a class="nav_hotels" href="inner.html">гостиницы</a>
@@ -43,9 +43,9 @@
         <h2 class="description_slogan">
           Седона – небольшой городок в Аризоне, заслуживающий большего!
         </h2>
-          <p class="description_text">
-            Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!
-          </p>
+        <p class="description_text">
+          Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!
+        </p>
       </section>
 
       <section class="main_town">
@@ -95,21 +95,21 @@
           <li class="advantages-item">
             <div class="advantages-item_container large_area-container">
               <p class="advantages-item_title">Небольшая площадь</p>
-                – &#8470;3 –
+              – &#8470;3 –
               <p class="advantages-item_text-square">Все достопримечательности находятся очень близко</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-item_container beutiful_road-container">
               <p class="advantages-item_title">Красивая дорога</p>
-                – &#8470;4 –
+              – &#8470;4 –
               <p class="advantages-item_text-road">Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-item_container few_tourists-container">
               <p class="advantages-item_title">Мало туристов</p>
-                – &#8470;5 –
+              – &#8470;5 –
               <p class="advantages-item_text-tourists">Большинство едет в&nbsp;гранд каньон и толпится там</p>
             </div>
           </li>
@@ -123,7 +123,7 @@
         </p>
         <form class="find_hotel-form" method="get" action="https://echo.htmlacademy.ru">
           <button class="find_hotel" type="button">поиск гостиницы в седоне</button>
-          <div class=" visually-hidden-form">
+          <div class="visually-hidden-form">
             <div class="date_check_in-item">
               <label for="date_check_in">
                 Дата заезда:
@@ -189,8 +189,10 @@
             <button class="search-btn" type="submit">Найти</button>
           </div>
         </form>
+        <iframe class="map-sedona" id="sedona-map"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12358.971523208158!2d-111.76606371367934!3d34.86958322651045!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2sSedona%2C%20AZ%2086336%2C%20USA!5e0!3m2!1sen!2sru!4v1573042060056!5m2!1sen!2sru"
+          width="1200" height="593" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
       </section>
-
     </main>
 
     <footer class="footer">
@@ -229,6 +231,8 @@
       </div>
     </footer>
   </div>
+  <script src="./js/popup.min.js">
+  </script>
 </body>
 
 </html>
