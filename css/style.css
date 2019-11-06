@@ -628,6 +628,8 @@ a {
 
   background-image: url("../img/map.jpg");
   background-repeat: no-repeat;
+
+  border: none;
 }
 
 .find_hotel-form-container {
