@@ -37,7 +37,8 @@ a {
 }
 
 .container {
-  width: 1200px;
+  min-width: 768px;
+  max-width: 1200px;
   height: 100%;
   margin-right: auto;
   margin-left: auto;
@@ -99,26 +100,26 @@ a {
   margin-right: 92px;
 }
 
-.nav-item:nth-child(3) {
+.nav_map-item {
   text-align: right;
   margin-right: 5px;
 }
 
-.nav-item:nth-child(4) {
+.nav_hotel-item {
   text-align: right;
 }
 
-.nav-icon {
+.nav_logo-container {
   position: absolute;
+    left: 50%;
+    z-index: 2;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    cursor: pointer;
+}
 
-  display: inline-block;
-
-  margin-left: auto;
-  margin-right: auto;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+.nav-icon {
+  border-style: none;
 }
 
 .nav-list a:hover {
